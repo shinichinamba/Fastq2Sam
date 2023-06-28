@@ -1,0 +1,6 @@
+/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/fastq2sam.dir
+/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/edit_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/rebuild_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/rebuild_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/edit_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir

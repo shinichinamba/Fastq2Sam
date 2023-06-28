@@ -1,0 +1,47 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/local/bin/g++-13 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+collect2: error: ld returned 1 exit status
+
+
+Performing C++ SOURCE FILE Test CPP20_FLAG_BUILTIN failed with the following output:
+Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_25f8f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_25f8f.dir/build.make CMakeFiles/cmTC_25f8f.dir/build
+Building CXX object CMakeFiles/cmTC_25f8f.dir/src.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCPP20_FLAG_BUILTIN -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_25f8f.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx:2:8: error: #error NOCXX20
+    2 |       #error NOCXX20
+      |        ^~~~~
+make[1]: *** [CMakeFiles/cmTC_25f8f.dir/src.cxx.o] Error 1
+make: *** [cmTC_25f8f/fast] Error 2
+
+
+Source file was:
+#if !defined (__cplusplus) || (__cplusplus < 201709)
+      #error NOCXX20
+      #endif
+      int main() {}
+Performing C++ SOURCE FILE Test CXX20_BUILTIN failed with the following output:
+Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_24420/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_24420.dir/build.make CMakeFiles/cmTC_24420.dir/build
+Building CXX object CMakeFiles/cmTC_24420.dir/src.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -DCXX20_BUILTIN -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_24420.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx:2:6: error: #error NOCXX20
+    2 |     #error NOCXX20
+      |      ^~~~~
+make[2]: *** [CMakeFiles/cmTC_24420.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_24420/fast] Error 2
+
+
+Source file was:
+#if !defined (__cplusplus) || (__cplusplus < 201709L)
+    #error NOCXX20
+    #endif
+    int main() {}
