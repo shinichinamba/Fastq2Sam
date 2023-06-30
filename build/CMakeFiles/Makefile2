@@ -55,19 +55,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake3
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake3 -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/snamba/Dropbox/Fastq2Sam/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/snamba/Dropbox/Fastq2Sam/build
+CMAKE_BINARY_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -114,14 +114,14 @@ _deps/yaml-cpp_fetch_content-build/clean: _deps/yaml-cpp_fetch_content-build/CMa
 CMakeFiles/fastq2sam.dir/all: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=1,2 "Built target fastq2sam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=1,2 "Built target fastq2sam"
 .PHONY : CMakeFiles/fastq2sam.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fastq2sam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fastq2sam.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles 0
 .PHONY : CMakeFiles/fastq2sam.dir/rule
 
 # Convenience name for target.
@@ -141,14 +141,14 @@ CMakeFiles/fastq2sam.dir/clean:
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target yaml-cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target yaml-cpp"
 .PHONY : _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles 0
 .PHONY : _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

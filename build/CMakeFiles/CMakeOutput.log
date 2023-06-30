@@ -1,255 +1,244 @@
-The system is: Darwin - 21.4.0 - x86_64
+The system is: Linux - 5.10.102.1-microsoft-standard-WSL2 - x86_64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/local/bin/g++-13 
-Build flags: 
-Id flags: -c 
+Compiler: /home/conda/anaconda3/envs/gxx13/bin/g++ 
+Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/conda/anaconda3/envs/gxx13/include
+Id flags:  
 
 The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/3.17.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/3.17.5/CompilerIdCXX/a.out"
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_59298/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_59298.dir/build.make CMakeFiles/cmTC_59298.dir/build
-Building CXX object CMakeFiles/cmTC_59298.dir/testCXXCompiler.cxx.o
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_59298.dir/testCXXCompiler.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_59298
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59298.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_59298.dir/testCXXCompiler.cxx.o  -o cmTC_59298 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_08476/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_08476.dir/build.make CMakeFiles/cmTC_08476.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_08476.dir/testCXXCompiler.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++     -o CMakeFiles/cmTC_08476.dir/testCXXCompiler.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_08476
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_08476.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++       CMakeFiles/cmTC_08476.dir/testCXXCompiler.cxx.o  -o cmTC_08476 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_77f99/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_77f99.dir/build.make CMakeFiles/cmTC_77f99.dir/build
-Building CXX object CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl,-v -o CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Using built-in specs.
-COLLECT_GCC=/usr/local/bin/g++-13
-Target: x86_64-apple-darwin21
-Configured with: ../configure --prefix=/usr/local/opt/gcc --libdir=/usr/local/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-13 --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-zstd=/usr/local/opt/zstd --with-pkgversion='Homebrew GCC 13.1.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=x86_64-apple-darwin21 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_c219d/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_c219d.dir/build.make CMakeFiles/cmTC_c219d.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o
+/home/conda/anaconda3/envs/gxx13/bin/g++    -v -o CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp
+Reading specs from /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/home/conda/anaconda3/envs/gxx13/bin/g++
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/13.1.0 --with-pkgversion='conda-forge gcc 13.1.0-0' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 13.1.0 (Homebrew GCC 13.1.0) 
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_77f99.dir/'
- /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/cc1plus -quiet -v -iprefix /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/ -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_77f99.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=12.0.0 -mtune=core2 -version -o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccnebnD2.s
-GNU C++17 (Homebrew GCC 13.1.0) version 13.1.0 (x86_64-apple-darwin21)
-	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version isl-0.26-GMP
+Supported LTO compression algorithms: zlib
+gcc version 13.1.0 (conda-forge gcc 13.1.0-0) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c219d.dir/'
+ /home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/cc1plus -quiet -v -iprefix /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/ -isysroot /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c219d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccu17x7k.s
+GNU C++17 (conda-forge gcc 13.1.0-0) version 13.1.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
-warning: MPFR header version 4.2.0-p4 differs from library version 4.2.0-p9.
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/include"
-ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13"
-ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/x86_64-apple-darwin21"
-ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/backward"
-ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/local/include"
-ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed"
-ignoring nonexistent directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/Library/Frameworks"
+ignoring duplicate directory "/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include"
+ignoring nonexistent directory "/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed"
+ignoring duplicate directory "/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13
- /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/x86_64-apple-darwin21
- /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/backward
- /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include
- /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/include
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/x86_64-conda-linux-gnu
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/backward
+ /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
 End of search list.
-Compiler executable checksum: e5ba2421883fc0e9f14f96691701f76b
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_77f99.dir/'
- as -arch x86_64 -v -mmacosx-version-min=12.0 -mllvm -x86-pad-for-align=false -force_cpusubtype_ALL -o CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccnebnD2.s
-Apple clang version 13.0.0 (clang-1300.0.29.3)
-Target: x86_64-apple-darwin21.4.0
+Compiler executable checksum: 564b911ccccc40eeed26f9ce6376dab3
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c219d.dir/'
+ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccu17x7k.s
+GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.40
+COMPILER_PATH=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_c219d
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_c219d.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++      -v CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c219d 
+Reading specs from /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/home/conda/anaconda3/envs/gxx13/bin/g++
+COLLECT_LTO_WRAPPER=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/13.1.0 --with-pkgversion='conda-forge gcc 13.1.0-0' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
 Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx12.0.0 -filetype obj -main-file-name ccnebnD2.s -target-cpu penryn -fdebug-compilation-dir /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -x86-pad-for-align=false -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccnebnD2.s
-COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/
-LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_77f99
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77f99.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib -v -Wl,-v CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_77f99 
-Using built-in specs.
-COLLECT_GCC=/usr/local/bin/g++-13
-COLLECT_LTO_WRAPPER=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/lto-wrapper
-Target: x86_64-apple-darwin21
-Configured with: ../configure --prefix=/usr/local/opt/gcc --libdir=/usr/local/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-13 --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-zstd=/usr/local/opt/zstd --with-pkgversion='Homebrew GCC 13.1.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=x86_64-apple-darwin21 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk
-Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 13.1.0 (Homebrew GCC 13.1.0) 
-COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/
-LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-L/usr/local/opt/ruby/lib' '-v' '-o' 'cmTC_77f99' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'cmTC_77f99.'
- /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2 -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_77f99 -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current
-collect2 version 13.1.0
-/usr/bin/ld -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_77f99 -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current
-@(#)PROGRAM:ld  PROJECT:ld64-711
-BUILD 18:11:15 Aug  3 2021
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/usr/local/opt/ruby/lib
-	/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13
-	/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc
-	/usr/local/Cellar/gcc/13.1.0/lib/gcc/current
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib
-Framework search paths:
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/
+Supported LTO compression algorithms: zlib
+gcc version 13.1.0 (conda-forge gcc 13.1.0-0) 
+COMPILER_PATH=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c219d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c219d.'
+ /home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/collect2 -plugin /home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/liblto_plugin.so -plugin-opt=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNPnGNs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c219d /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/crtbeginS.o -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0 -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../.. -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/crtendS.o /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/conda/anaconda3/envs/gxx13/lib
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c219d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c219d.'
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13]
-    add: [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/x86_64-apple-darwin21]
-    add: [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/backward]
-    add: [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include]
-    add: [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed]
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/x86_64-conda-linux-gnu]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/backward]
+    add: [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
   end of search list found
-  collapse include dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13] ==> [/usr/local/Cellar/gcc/13.1.0/include/c++/13]
-  collapse include dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/x86_64-apple-darwin21] ==> [/usr/local/Cellar/gcc/13.1.0/include/c++/13/x86_64-apple-darwin21]
-  collapse include dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/backward] ==> [/usr/local/Cellar/gcc/13.1.0/include/c++/13/backward]
-  collapse include dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13/include]
-  collapse include dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
-  implicit include dirs: [/usr/local/Cellar/gcc/13.1.0/include/c++/13;/usr/local/Cellar/gcc/13.1.0/include/c++/13/x86_64-apple-darwin21;/usr/local/Cellar/gcc/13.1.0/include/c++/13/backward;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13/include;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include] ==> [/home/conda/anaconda3/envs/gxx13/lib/gcc/x86_64-conda-linux-gnu/13.1.0/include]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed] ==> [/home/conda/anaconda3/envs/gxx13/lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/include] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include/c++/13.1.0]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/x86_64-conda-linux-gnu] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include/c++/13.1.0/x86_64-conda-linux-gnu]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/backward] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include/c++/13.1.0/backward]
+  collapse include dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/home/conda/anaconda3/envs/gxx13/lib/gcc/x86_64-conda-linux-gnu/13.1.0/include;/home/conda/anaconda3/envs/gxx13/lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include/c++/13.1.0;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include/c++/13.1.0/x86_64-conda-linux-gnu;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/include/c++/13.1.0/backward;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_77f99/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_77f99.dir/build.make CMakeFiles/cmTC_77f99.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl -v -o CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/local/bin/g++-13]
-  ignore line: [Target: x86_64-apple-darwin21]
-  ignore line: [Configured with: ../configure --prefix=/usr/local/opt/gcc --libdir=/usr/local/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-13 --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-zstd=/usr/local/opt/zstd --with-pkgversion='Homebrew GCC 13.1.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=x86_64-apple-darwin21 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk]
+  ignore line: [Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_c219d/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_c219d.dir/build.make CMakeFiles/cmTC_c219d.dir/build]
+  ignore line: [gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/conda/anaconda3/envs/gxx13/bin/g++    -v -o CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Reading specs from /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/home/conda/anaconda3/envs/gxx13/bin/g++]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/13.1.0 --with-pkgversion='conda-forge gcc 13.1.0-0' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 13.1.0 (Homebrew GCC 13.1.0) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_77f99.dir/']
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/cc1plus -quiet -v -iprefix /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/ -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_77f99.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=12.0.0 -mtune=core2 -version -o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccnebnD2.s]
-  ignore line: [GNU C++17 (Homebrew GCC 13.1.0) version 13.1.0 (x86_64-apple-darwin21)]
-  ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version isl-0.26-GMP]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 13.1.0 (conda-forge gcc 13.1.0-0) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c219d.dir/']
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/cc1plus -quiet -v -iprefix /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/ -isysroot /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /usr/share/cmake3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c219d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccu17x7k.s]
+  ignore line: [GNU C++17 (conda-forge gcc 13.1.0-0) version 13.1.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
   ignore line: []
-  ignore line: [warning: MPFR header version 4.2.0-p4 differs from library version 4.2.0-p9.]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/include"]
-  ignore line: [ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13"]
-  ignore line: [ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/x86_64-apple-darwin21"]
-  ignore line: [ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/backward"]
-  ignore line: [ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/local/include"]
-  ignore line: [ignoring duplicate directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/include"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/Library/Frameworks"]
+  ignore line: [ignoring duplicate directory "/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include"]
+  ignore line: [ignoring nonexistent directory "/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13]
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/x86_64-apple-darwin21]
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../include/c++/13/backward]
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include]
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/include-fixed]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/include-fixed]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/x86_64-conda-linux-gnu]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/13.1.0/backward]
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
   ignore line: [End of search list.]
-  ignore line: [Compiler executable checksum: e5ba2421883fc0e9f14f96691701f76b]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_77f99.dir/']
-  ignore line: [ as -arch x86_64 -v -mmacosx-version-min=12.0 -mllvm -x86-pad-for-align=false -force_cpusubtype_ALL -o CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccnebnD2.s]
-  ignore line: [Apple clang version 13.0.0 (clang-1300.0.29.3)]
-  ignore line: [Target: x86_64-apple-darwin21.4.0]
+  ignore line: [Compiler executable checksum: 564b911ccccc40eeed26f9ce6376dab3]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c219d.dir/']
+  ignore line: [ /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccu17x7k.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.40]
+  ignore line: [COMPILER_PATH=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_c219d]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_c219d.dir/link.txt --verbose=1]
+  ignore line: [/home/conda/anaconda3/envs/gxx13/bin/g++      -v CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c219d ]
+  ignore line: [Reading specs from /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/home/conda/anaconda3/envs/gxx13/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1685813977163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/13.1.0 --with-pkgversion='conda-forge gcc 13.1.0-0' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx12.0.0 -filetype obj -main-file-name ccnebnD2.s -target-cpu penryn -fdebug-compilation-dir /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -x86-pad-for-align=false -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccnebnD2.s]
-  ignore line: [COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/]
-  ignore line: [LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_77f99]
-  ignore line: [/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77f99.dir/link.txt --verbose=1]
-  ignore line: [/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -L/usr/local/opt/ruby/lib -v -Wl -v CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_77f99 ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/local/bin/g++-13]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/lto-wrapper]
-  ignore line: [Target: x86_64-apple-darwin21]
-  ignore line: [Configured with: ../configure --prefix=/usr/local/opt/gcc --libdir=/usr/local/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-13 --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr --with-mpc=/usr/local/opt/libmpc --with-isl=/usr/local/opt/isl --with-zstd=/usr/local/opt/zstd --with-pkgversion='Homebrew GCC 13.1.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=x86_64-apple-darwin21 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk]
-  ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 13.1.0 (Homebrew GCC 13.1.0) ]
-  ignore line: [COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/]
-  ignore line: [LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-L/usr/local/opt/ruby/lib' '-v' '-o' 'cmTC_77f99' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'cmTC_77f99.']
-  link line: [ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2 -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_77f99 -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current]
-    arg [/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [12.0.0] ==> ignore
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 13.1.0 (conda-forge gcc 13.1.0-0) ]
+  ignore line: [COMPILER_PATH=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/:/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c219d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c219d.']
+  link line: [ /home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/collect2 -plugin /home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/liblto_plugin.so -plugin-opt=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNPnGNs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c219d /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/crtbeginS.o -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0 -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib -L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../.. -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/crtendS.o /home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/conda/anaconda3/envs/gxx13/lib]
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/conda/anaconda3/envs/gxx13/bin/../libexec/gcc/x86_64-conda-linux-gnu/13.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccNPnGNs.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_77f99] ==> ignore
-    arg [-L/usr/local/opt/ruby/lib] ==> dir [/usr/local/opt/ruby/lib]
-    arg [-L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13] ==> dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13]
-    arg [-L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc] ==> dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc]
-    arg [-L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../..] ==> dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../..]
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_77f99.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_c219d] ==> ignore
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> ignore
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> ignore
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/crtbeginS.o] ==> ignore
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../..] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../..]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_c219d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lgcc_s.1.1] ==> lib [gcc_s.1.1]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lSystem] ==> lib [System]
-    arg [-no_compact_unwind] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/crtendS.o] ==> ignore
+    arg [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> ignore
     arg [-rpath] ==> ignore
-    arg [@loader_path] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc] ==> ignore
-    arg [-rpath] ==> ignore
-    arg [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current] ==> ignore
-  Library search paths: [;/usr/local/opt/ruby/lib;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib]
-  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  collapse library dir [/usr/local/opt/ruby/lib] ==> [/usr/local/opt/ruby/lib]
-  collapse library dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13]
-  collapse library dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc]
-  collapse library dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../..] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current]
-  collapse library dir [/usr/local/opt/ruby/lib] ==> [/usr/local/opt/ruby/lib]
-  collapse library dir [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13]
-  collapse library dir [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc]
-  collapse library dir [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current] ==> [/usr/local/Cellar/gcc/13.1.0/lib/gcc/current]
-  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib]
-  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
-  implicit libs: [stdc++;gcc_s.1.1;gcc]
-  implicit dirs: [/usr/local/opt/ruby/lib;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc;/usr/local/Cellar/gcc/13.1.0/lib/gcc/current;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib]
-  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
+    arg [/home/conda/anaconda3/envs/gxx13/lib] ==> ignore
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0] ==> [/home/conda/anaconda3/envs/gxx13/lib/gcc/x86_64-conda-linux-gnu/13.1.0]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc] ==> [/home/conda/anaconda3/envs/gxx13/lib/gcc]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../lib] ==> [/home/conda/anaconda3/envs/gxx13/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../lib/gcc/x86_64-conda-linux-gnu/13.1.0/../../..] ==> [/home/conda/anaconda3/envs/gxx13/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/home/conda/anaconda3/envs/gxx13/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/conda/anaconda3/envs/gxx13/lib/gcc/x86_64-conda-linux-gnu/13.1.0;/home/conda/anaconda3/envs/gxx13/lib/gcc;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/lib;/home/conda/anaconda3/envs/gxx13/lib;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/lib;/home/conda/anaconda3/envs/gxx13/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
 
 
 Performing C++ SOURCE FILE Test CPP20_FLAG_STD20 succeeded with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_87b57/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_87b57.dir/build.make CMakeFiles/cmTC_87b57.dir/build
-Building CXX object CMakeFiles/cmTC_87b57.dir/src.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCPP20_FLAG_STD20  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_87b57.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_87b57
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87b57.dir/link.txt --verbose=1
-/usr/local/bin/g++-13   -DCPP20_FLAG_STD20  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_87b57.dir/src.cxx.o  -o cmTC_87b57 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_95b03/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_95b03.dir/build.make CMakeFiles/cmTC_95b03.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_95b03.dir/src.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCPP20_FLAG_STD20  -std=c++20   -o CMakeFiles/cmTC_95b03.dir/src.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_95b03
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_95b03.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++   -DCPP20_FLAG_STD20  -std=c++20    CMakeFiles/cmTC_95b03.dir/src.cxx.o  -o cmTC_95b03 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -258,85 +247,61 @@ Source file was:
       #endif
       int main() {}
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ebfb6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ebfb6.dir/build.make CMakeFiles/cmTC_ebfb6.dir/build
-Building CXX object CMakeFiles/cmTC_ebfb6.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_ebfb6.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_ebfb6
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebfb6.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_ebfb6.dir/CheckIncludeFile.cxx.o  -o cmTC_ebfb6 
-
-
-
-Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_60822/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_60822.dir/build.make CMakeFiles/cmTC_60822.dir/build
-Building CXX object CMakeFiles/cmTC_60822.dir/src.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_60822.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_60822
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60822.dir/link.txt --verbose=1
-/usr/local/bin/g++-13   -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_60822.dir/src.cxx.o  -o cmTC_60822 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_8155c/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_8155c.dir/build.make CMakeFiles/cmTC_8155c.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8155c.dir/CheckIncludeFile.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include   -o CMakeFiles/cmTC_8155c.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_8155c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_8155c.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++       CMakeFiles/cmTC_8155c.dir/CheckIncludeFile.cxx.o  -o cmTC_8155c 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
-Source file was:
-#include <pthread.h>
-
-void* test_func(void* data)
-{
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_cancel(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
-  return 0;
-}
 
 Determining if the include file sdsl/version.hpp exists passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e721d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e721d.dir/build.make CMakeFiles/cmTC_e721d.dir/build
-Building CXX object CMakeFiles/cmTC_e721d.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_e721d.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_e721d
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e721d.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_e721d.dir/CheckIncludeFile.cxx.o  -o cmTC_e721d 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_1713f/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_1713f.dir/build.make CMakeFiles/cmTC_1713f.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1713f.dir/CheckIncludeFile.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include   -o CMakeFiles/cmTC_1713f.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_1713f
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_1713f.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++       CMakeFiles/cmTC_1713f.dir/CheckIncludeFile.cxx.o  -o cmTC_1713f 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the include file cereal/cereal.hpp exists passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_db09a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_db09a.dir/build.make CMakeFiles/cmTC_db09a.dir/build
-Building CXX object CMakeFiles/cmTC_db09a.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_db09a.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_db09a
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db09a.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_db09a.dir/CheckIncludeFile.cxx.o  -o cmTC_db09a 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_47638/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_47638.dir/build.make CMakeFiles/cmTC_47638.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_47638.dir/CheckIncludeFile.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include   -o CMakeFiles/cmTC_47638.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_47638
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_47638.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++       CMakeFiles/cmTC_47638.dir/CheckIncludeFile.cxx.o  -o cmTC_47638 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 
 Determining if the BZ2_bzCompressInit exist passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_77a9b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_77a9b.dir/build.make CMakeFiles/cmTC_77a9b.dir/build
-Building CXX object CMakeFiles/cmTC_77a9b.dir/CheckSymbolExists.cxx.o
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_77a9b.dir/CheckSymbolExists.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-Linking CXX executable cmTC_77a9b
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77a9b.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_77a9b.dir/CheckSymbolExists.cxx.o  -o cmTC_77a9b  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libbz2.tbd 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_c3fdb/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_c3fdb.dir/build.make CMakeFiles/cmTC_c3fdb.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3fdb.dir/CheckSymbolExists.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/home/conda/anaconda3/envs/gxx13/include   -o CMakeFiles/cmTC_c3fdb.dir/CheckSymbolExists.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_c3fdb
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_c3fdb.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++       CMakeFiles/cmTC_c3fdb.dir/CheckSymbolExists.cxx.o  -o cmTC_c3fdb  /home/conda/anaconda3/envs/gxx13/lib/libbz2.so 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
-File /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+File /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
 #include <bzlib.h>
 
@@ -351,26 +316,30 @@ int main(int argc, char** argv)
 #endif
 }
 Determining if the include file execinfo.h exists passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f2abd/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f2abd.dir/build.make CMakeFiles/cmTC_f2abd.dir/build
-Building CXX object CMakeFiles/cmTC_f2abd.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_f2abd.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_f2abd
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2abd.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_f2abd.dir/CheckIncludeFile.cxx.o  -o cmTC_f2abd 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_e87e7/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_e87e7.dir/build.make CMakeFiles/cmTC_e87e7.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e87e7.dir/CheckIncludeFile.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include   -o CMakeFiles/cmTC_e87e7.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_e87e7
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_e87e7.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++       CMakeFiles/cmTC_e87e7.dir/CheckIncludeFile.cxx.o  -o cmTC_e87e7 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 
 Performing C++ SOURCE FILE Test CXX20_FLAG succeeded with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_9f05b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9f05b.dir/build.make CMakeFiles/cmTC_9f05b.dir/build
-Building CXX object CMakeFiles/cmTC_9f05b.dir/src.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -DCXX20_FLAG  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_9f05b.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_9f05b
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f05b.dir/link.txt --verbose=1
-/usr/local/bin/g++-13   -DCXX20_FLAG  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_9f05b.dir/src.cxx.o  -o cmTC_9f05b 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_d1c34/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_d1c34.dir/build.make CMakeFiles/cmTC_d1c34.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d1c34.dir/src.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/sharg-parser/include  -DCXX20_FLAG  -std=c++20   -o CMakeFiles/cmTC_d1c34.dir/src.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d1c34
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_d1c34.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++   -DCXX20_FLAG  -std=c++20    CMakeFiles/cmTC_d1c34.dir/src.cxx.o  -o cmTC_d1c34 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 Source file was:
@@ -379,14 +348,16 @@ Source file was:
     #endif
     int main() {}
 Determining if the include file execinfo.h exists passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d3dbe/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d3dbe.dir/build.make CMakeFiles/cmTC_d3dbe.dir/build
-Building CXX object CMakeFiles/cmTC_d3dbe.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_d3dbe.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_d3dbe
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3dbe.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_d3dbe.dir/CheckIncludeFile.cxx.o  -o cmTC_d3dbe 
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_ee252/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_ee252.dir/build.make CMakeFiles/cmTC_ee252.dir/build
+gmake[1]: Entering directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee252.dir/CheckIncludeFile.cxx.o
+/home/conda/anaconda3/envs/gxx13/bin/g++   -I/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/sharg-parser/include  -std=c++20   -o CMakeFiles/cmTC_ee252.dir/CheckIncludeFile.cxx.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_ee252
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_ee252.dir/link.txt --verbose=1
+/home/conda/anaconda3/envs/gxx13/bin/g++    -std=c++20    CMakeFiles/cmTC_ee252.dir/CheckIncludeFile.cxx.o  -o cmTC_ee252 
+gmake[1]: Leaving directory '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/CMakeTmp'
 
 
 

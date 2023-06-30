@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate-complete.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-mkdir.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-update.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-update.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-patch.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build.rule"
 		},
 		{
-			"file" : "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-test.rule"
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-test.rule"
 		}
 	],
 	"target" : 

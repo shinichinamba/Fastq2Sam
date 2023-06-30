@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
 # file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 3.17.1)
+cmake_minimum_required(VERSION 3.17.5)
 
 # We name the project and the target for the ExternalProject_Add() call
 # to something that will highlight to the user what we are working on if
@@ -12,8 +12,8 @@ project(yaml-cpp_fetch_content-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(yaml-cpp_fetch_content-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/jbeder/yaml-cpp.git" "GIT_TAG" "yaml-cpp-0.7.0"
-                    SOURCE_DIR          "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
-                    BINARY_DIR          "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build"
+                    SOURCE_DIR          "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
+                    BINARY_DIR          "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

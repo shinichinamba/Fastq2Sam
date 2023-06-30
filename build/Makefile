@@ -59,38 +59,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake3
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake3 -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/snamba/Dropbox/Fastq2Sam/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/snamba/Dropbox/Fastq2Sam/build
+CMAKE_BINARY_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.17.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake3 --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -98,11 +87,33 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake3 -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest3 --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,7 +138,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -157,32 +168,32 @@ yaml-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build
 .PHONY : yaml-cpp/fast
 
-fastq2sam.o: fastq2sam.cpp.o
+src/fastq2sam.o: src/fastq2sam.cpp.o
 
-.PHONY : fastq2sam.o
+.PHONY : src/fastq2sam.o
 
 # target to build an object file
-fastq2sam.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o
-.PHONY : fastq2sam.cpp.o
+src/fastq2sam.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o
+.PHONY : src/fastq2sam.cpp.o
 
-fastq2sam.i: fastq2sam.cpp.i
+src/fastq2sam.i: src/fastq2sam.cpp.i
 
-.PHONY : fastq2sam.i
+.PHONY : src/fastq2sam.i
 
 # target to preprocess a source file
-fastq2sam.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/fastq2sam.cpp.i
-.PHONY : fastq2sam.cpp.i
+src/fastq2sam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.i
+.PHONY : src/fastq2sam.cpp.i
 
-fastq2sam.s: fastq2sam.cpp.s
+src/fastq2sam.s: src/fastq2sam.cpp.s
 
-.PHONY : fastq2sam.s
+.PHONY : src/fastq2sam.s
 
 # target to generate assembly for a file
-fastq2sam.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/fastq2sam.cpp.s
-.PHONY : fastq2sam.cpp.s
+src/fastq2sam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.s
+.PHONY : src/fastq2sam.cpp.s
 
 # Help Target
 help:
@@ -192,11 +203,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... fastq2sam"
 	@echo "... yaml-cpp"
-	@echo "... fastq2sam.o"
-	@echo "... fastq2sam.i"
-	@echo "... fastq2sam.s"
+	@echo "... src/fastq2sam.o"
+	@echo "... src/fastq2sam.i"
+	@echo "... src/fastq2sam.s"
 .PHONY : help
 
 
@@ -208,7 +220,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

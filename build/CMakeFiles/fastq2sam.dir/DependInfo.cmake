@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/snamba/Dropbox/Fastq2Sam/src/fastq2sam.cpp" "/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o"
+  "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/src/fastq2sam.cpp" "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,17 +18,18 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Users/snamba/Dropbox/Fastq2Sam/seqan3/include"
-  "/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include"
-  "/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/submodules/tool_description_lib/src"
+  "../seqan3/include"
+  "../sharg-parser/include"
+  "../sharg-parser/submodules/tool_description_lib/src"
   "_deps/yaml-cpp_fetch_content-src/include"
-  "/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include"
-  "/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include"
+  "../seqan3/submodules/sdsl-lite/include"
+  "../seqan3/submodules/cereal/include"
+  "/home/conda/anaconda3/envs/gxx13/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/DependInfo.cmake"
+  "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

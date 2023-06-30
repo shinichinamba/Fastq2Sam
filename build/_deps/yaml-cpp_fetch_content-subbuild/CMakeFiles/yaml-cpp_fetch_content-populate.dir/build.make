@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake3
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake3 -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild
+CMAKE_SOURCE_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild
+CMAKE_BINARY_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild
 
 # Utility rule file for yaml-cpp_fetch_content-populate.
 
@@ -85,58 +85,58 @@ CMakeFiles/yaml-cpp_fetch_content-populate-complete: yaml-cpp_fetch_content-popu
 CMakeFiles/yaml-cpp_fetch_content-populate-complete: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build
 CMakeFiles/yaml-cpp_fetch_content-populate-complete: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install
 CMakeFiles/yaml-cpp_fetch_content-populate-complete: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'yaml-cpp_fetch_content-populate'"
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate-complete
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'yaml-cpp_fetch_content-populate'"
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles
+	/usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate-complete
+	/usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-done
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'yaml-cpp_fetch_content-populate'"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E echo_append
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'yaml-cpp_fetch_content-populate'"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E echo_append
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'yaml-cpp_fetch_content-populate'"
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/tmp
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E make_directory /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'yaml-cpp_fetch_content-populate'"
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/tmp
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src
+	/usr/bin/cmake3 -E make_directory /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp
+	/usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-mkdir
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitinfo.txt
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'yaml-cpp_fetch_content-populate'"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps && /usr/local/Cellar/cmake/3.17.1/bin/cmake -P /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-gitclone.cmake
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'yaml-cpp_fetch_content-populate'"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps && /usr/bin/cmake3 -P /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-gitclone.cmake
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps && /usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-update: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing update step for 'yaml-cpp_fetch_content-populate'"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src && /usr/local/Cellar/cmake/3.17.1/bin/cmake -P /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing update step for 'yaml-cpp_fetch_content-populate'"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src && /usr/bin/cmake3 -P /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-gitupdate.cmake
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-patch: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'yaml-cpp_fetch_content-populate'"
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E echo_append
-	/usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'yaml-cpp_fetch_content-populate'"
+	/usr/bin/cmake3 -E echo_append
+	/usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-patch
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure: yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-cfgcmd.txt
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-update
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No configure step for 'yaml-cpp_fetch_content-populate'"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E echo_append
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No configure step for 'yaml-cpp_fetch_content-populate'"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E echo_append
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No build step for 'yaml-cpp_fetch_content-populate'"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E echo_append
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No build step for 'yaml-cpp_fetch_content-populate'"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E echo_append
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-build
 
 yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-test: yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No test step for 'yaml-cpp_fetch_content-populate'"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E echo_append
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/Cellar/cmake/3.17.1/bin/cmake -E touch /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No test step for 'yaml-cpp_fetch_content-populate'"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E echo_append
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/bin/cmake3 -E touch /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-test
 
 yaml-cpp_fetch_content-populate: CMakeFiles/yaml-cpp_fetch_content-populate
 yaml-cpp_fetch_content-populate: CMakeFiles/yaml-cpp_fetch_content-populate-complete
@@ -162,6 +162,6 @@ CMakeFiles/yaml-cpp_fetch_content-populate.dir/clean:
 .PHONY : CMakeFiles/yaml-cpp_fetch_content-populate.dir/clean
 
 CMakeFiles/yaml-cpp_fetch_content-populate.dir/depend:
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/CMakeFiles/yaml-cpp_fetch_content-populate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yaml-cpp_fetch_content-populate.dir/depend
 

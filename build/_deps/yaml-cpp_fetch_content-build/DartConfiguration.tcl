@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src
-BuildDirectory: /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build
+SourceDirectory: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src
+BuildDirectory: /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: NambaMB.local
+Site: DESKTOP-IE1CMKO
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Darwin-g++-13
+BuildName: Linux-g++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.17.1/bin/cmake" "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
-MakeCommand: /usr/local/Cellar/cmake/3.17.1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/bin/cmake3" "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
+MakeCommand: /usr/bin/cmake3 --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -62,7 +62,7 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/local/bin/g++-13
+Compiler: /home/conda/anaconda3/envs/gxx13/bin/g++
 CompilerVersion: 13.1.0
 
 # Dynamic analysis (MemCheck)
@@ -73,12 +73,12 @@ DrMemoryCommand:
 DrMemoryCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
-MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
+MemoryCheckCommand: /opt/rh/devtoolset-8/root/usr/bin/valgrind
 MemoryCheckCommandOptions: 
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: /usr/bin/gcov
+CoverageCommand: /home/conda/anaconda3/envs/gxx13/bin/gcov
 CoverageExtraFlags: -l
 
 # Cluster commands

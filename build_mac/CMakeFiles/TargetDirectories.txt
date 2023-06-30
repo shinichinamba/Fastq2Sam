@@ -1,0 +1,8 @@
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/test.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/fastq2sam.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/edit_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/rebuild_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/_deps/yaml-cpp_fetch_content-build/CMakeFiles/test.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/_deps/yaml-cpp_fetch_content-build/CMakeFiles/rebuild_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/_deps/yaml-cpp_fetch_content-build/CMakeFiles/edit_cache.dir
+/Users/snamba/Dropbox/Fastq2Sam/build_mac/_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir

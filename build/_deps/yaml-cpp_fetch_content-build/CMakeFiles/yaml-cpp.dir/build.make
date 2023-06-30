@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake3
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake3 -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/snamba/Dropbox/Fastq2Sam/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/snamba/Dropbox/Fastq2Sam/build
+CMAKE_BINARY_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build
 
 # Include any dependencies generated for this target.
 include _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/depend.make
@@ -79,380 +79,380 @@ include _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o: _deps/yaml-cpp_fetch_content-src/src/binary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/binary.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/binary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/binary.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/binary.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/binary.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/binary.cpp > CMakeFiles/yaml-cpp.dir/src/binary.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/binary.cpp > CMakeFiles/yaml-cpp.dir/src/binary.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/binary.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/binary.cpp -o CMakeFiles/yaml-cpp.dir/src/binary.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/binary.cpp -o CMakeFiles/yaml-cpp.dir/src/binary.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o: _deps/yaml-cpp_fetch_content-src/src/convert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/convert.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/convert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/convert.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/convert.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/convert.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/convert.cpp > CMakeFiles/yaml-cpp.dir/src/convert.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/convert.cpp > CMakeFiles/yaml-cpp.dir/src/convert.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/convert.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/convert.cpp -o CMakeFiles/yaml-cpp.dir/src/convert.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/convert.cpp -o CMakeFiles/yaml-cpp.dir/src/convert.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o: _deps/yaml-cpp_fetch_content-src/src/depthguard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/depthguard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/depthguard.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/depthguard.cpp > CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/depthguard.cpp > CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/depthguard.cpp -o CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/depthguard.cpp -o CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o: _deps/yaml-cpp_fetch_content-src/src/directives.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/directives.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/directives.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/directives.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/directives.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/directives.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/directives.cpp > CMakeFiles/yaml-cpp.dir/src/directives.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/directives.cpp > CMakeFiles/yaml-cpp.dir/src/directives.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/directives.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/directives.cpp -o CMakeFiles/yaml-cpp.dir/src/directives.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/directives.cpp -o CMakeFiles/yaml-cpp.dir/src/directives.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o: _deps/yaml-cpp_fetch_content-src/src/emit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emit.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emit.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emit.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/emit.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emit.cpp > CMakeFiles/yaml-cpp.dir/src/emit.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emit.cpp > CMakeFiles/yaml-cpp.dir/src/emit.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/emit.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emit.cpp -o CMakeFiles/yaml-cpp.dir/src/emit.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emit.cpp -o CMakeFiles/yaml-cpp.dir/src/emit.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o: _deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp > CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp > CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp -o CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitfromevents.cpp -o CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o: _deps/yaml-cpp_fetch_content-src/src/emitter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitter.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/emitter.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitter.cpp > CMakeFiles/yaml-cpp.dir/src/emitter.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitter.cpp > CMakeFiles/yaml-cpp.dir/src/emitter.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/emitter.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitter.cpp -o CMakeFiles/yaml-cpp.dir/src/emitter.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitter.cpp -o CMakeFiles/yaml-cpp.dir/src/emitter.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o: _deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp > CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp > CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp -o CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterstate.cpp -o CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o: _deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp > CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp > CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp -o CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/emitterutils.cpp -o CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o: _deps/yaml-cpp_fetch_content-src/src/exceptions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exceptions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exceptions.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exceptions.cpp > CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exceptions.cpp > CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exceptions.cpp -o CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exceptions.cpp -o CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o: _deps/yaml-cpp_fetch_content-src/src/exp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/exp.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/exp.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exp.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/exp.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exp.cpp > CMakeFiles/yaml-cpp.dir/src/exp.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exp.cpp > CMakeFiles/yaml-cpp.dir/src/exp.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/exp.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exp.cpp -o CMakeFiles/yaml-cpp.dir/src/exp.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/exp.cpp -o CMakeFiles/yaml-cpp.dir/src/exp.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o: _deps/yaml-cpp_fetch_content-src/src/memory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/memory.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/memory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/memory.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/memory.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/memory.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/memory.cpp > CMakeFiles/yaml-cpp.dir/src/memory.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/memory.cpp > CMakeFiles/yaml-cpp.dir/src/memory.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/memory.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/memory.cpp -o CMakeFiles/yaml-cpp.dir/src/memory.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/memory.cpp -o CMakeFiles/yaml-cpp.dir/src/memory.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o: _deps/yaml-cpp_fetch_content-src/src/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/node.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/node.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/node.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node.cpp > CMakeFiles/yaml-cpp.dir/src/node.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node.cpp > CMakeFiles/yaml-cpp.dir/src/node.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/node.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node.cpp -o CMakeFiles/yaml-cpp.dir/src/node.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node.cpp -o CMakeFiles/yaml-cpp.dir/src/node.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o: _deps/yaml-cpp_fetch_content-src/src/node_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node_data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node_data.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/node_data.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node_data.cpp > CMakeFiles/yaml-cpp.dir/src/node_data.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node_data.cpp > CMakeFiles/yaml-cpp.dir/src/node_data.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/node_data.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node_data.cpp -o CMakeFiles/yaml-cpp.dir/src/node_data.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/node_data.cpp -o CMakeFiles/yaml-cpp.dir/src/node_data.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o: _deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp > CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp > CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp -o CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodebuilder.cpp -o CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o: _deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp > CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp > CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp -o CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/nodeevents.cpp -o CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o: _deps/yaml-cpp_fetch_content-src/src/null.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/null.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/null.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/null.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/null.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/null.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/null.cpp > CMakeFiles/yaml-cpp.dir/src/null.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/null.cpp > CMakeFiles/yaml-cpp.dir/src/null.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/null.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/null.cpp -o CMakeFiles/yaml-cpp.dir/src/null.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/null.cpp -o CMakeFiles/yaml-cpp.dir/src/null.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o: _deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp > CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp > CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp -o CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/ostream_wrapper.cpp -o CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o: _deps/yaml-cpp_fetch_content-src/src/parse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/parse.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/parse.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parse.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/parse.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parse.cpp > CMakeFiles/yaml-cpp.dir/src/parse.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parse.cpp > CMakeFiles/yaml-cpp.dir/src/parse.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/parse.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parse.cpp -o CMakeFiles/yaml-cpp.dir/src/parse.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parse.cpp -o CMakeFiles/yaml-cpp.dir/src/parse.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o: _deps/yaml-cpp_fetch_content-src/src/parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/parser.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/parser.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parser.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/parser.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parser.cpp > CMakeFiles/yaml-cpp.dir/src/parser.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parser.cpp > CMakeFiles/yaml-cpp.dir/src/parser.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/parser.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parser.cpp -o CMakeFiles/yaml-cpp.dir/src/parser.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/parser.cpp -o CMakeFiles/yaml-cpp.dir/src/parser.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o: _deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp > CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp > CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp -o CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/regex_yaml.cpp -o CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o: _deps/yaml-cpp_fetch_content-src/src/scanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanner.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/scanner.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanner.cpp > CMakeFiles/yaml-cpp.dir/src/scanner.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanner.cpp > CMakeFiles/yaml-cpp.dir/src/scanner.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/scanner.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanner.cpp -o CMakeFiles/yaml-cpp.dir/src/scanner.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanner.cpp -o CMakeFiles/yaml-cpp.dir/src/scanner.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o: _deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp > CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp > CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp -o CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scanscalar.cpp -o CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o: _deps/yaml-cpp_fetch_content-src/src/scantag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantag.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/scantag.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantag.cpp > CMakeFiles/yaml-cpp.dir/src/scantag.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantag.cpp > CMakeFiles/yaml-cpp.dir/src/scantag.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/scantag.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantag.cpp -o CMakeFiles/yaml-cpp.dir/src/scantag.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantag.cpp -o CMakeFiles/yaml-cpp.dir/src/scantag.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o: _deps/yaml-cpp_fetch_content-src/src/scantoken.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantoken.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantoken.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantoken.cpp > CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantoken.cpp > CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantoken.cpp -o CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/scantoken.cpp -o CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o: _deps/yaml-cpp_fetch_content-src/src/simplekey.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/simplekey.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/simplekey.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/simplekey.cpp > CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/simplekey.cpp > CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/simplekey.cpp -o CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/simplekey.cpp -o CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o: _deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp > CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp > CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp -o CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/singledocparser.cpp -o CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o: _deps/yaml-cpp_fetch_content-src/src/stream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/stream.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/stream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/stream.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/stream.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/stream.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/stream.cpp > CMakeFiles/yaml-cpp.dir/src/stream.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/stream.cpp > CMakeFiles/yaml-cpp.dir/src/stream.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/stream.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/stream.cpp -o CMakeFiles/yaml-cpp.dir/src/stream.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/stream.cpp -o CMakeFiles/yaml-cpp.dir/src/stream.cpp.s
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/flags.make
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o: _deps/yaml-cpp_fetch_content-src/src/tag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/tag.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/tag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yaml-cpp.dir/src/tag.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/tag.cpp
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/tag.cpp.i"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/tag.cpp > CMakeFiles/yaml-cpp.dir/src/tag.cpp.i
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/tag.cpp > CMakeFiles/yaml-cpp.dir/src/tag.cpp.i
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/tag.cpp.s"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/tag.cpp -o CMakeFiles/yaml-cpp.dir/src/tag.cpp.s
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && /home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src/src/tag.cpp -o CMakeFiles/yaml-cpp.dir/src/tag.cpp.s
 
 # Object files for target yaml-cpp
 yaml__cpp_OBJECTS = \
@@ -520,9 +520,9 @@ _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-b
 _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
 _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make
 _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX static library libyaml-cpp.a"
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -P CMakeFiles/yaml-cpp.dir/cmake_clean_target.cmake
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yaml-cpp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX static library libyaml-cpp.a"
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -P CMakeFiles/yaml-cpp.dir/cmake_clean_target.cmake
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yaml-cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build: _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a
@@ -530,10 +530,10 @@ _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build: _deps/yaml-cpp
 .PHONY : _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/clean:
-	cd /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -P CMakeFiles/yaml-cpp.dir/cmake_clean.cmake
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -P CMakeFiles/yaml-cpp.dir/cmake_clean.cmake
 .PHONY : _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/clean
 
 _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/depend:
-	cd /Users/snamba/Dropbox/Fastq2Sam/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/snamba/Dropbox/Fastq2Sam/src /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src /Users/snamba/Dropbox/Fastq2Sam/build /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build /Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/sinnh/Dropbox/Fastq2Sam /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/depend
 

@@ -1,15 +1,15 @@
 
-if(NOT "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitinfo.txt" IS_NEWER_THAN "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt")
-  message(STATUS "Avoiding repeated git clone, stamp file is up to date: '/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt'")
+if(NOT "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitinfo.txt" IS_NEWER_THAN "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt")
+  message(STATUS "Avoiding repeated git clone, stamp file is up to date: '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt'")
   return()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src'")
+  message(FATAL_ERROR "Failed to remove directory: '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -18,7 +18,7 @@ set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git"  clone --no-checkout "https://github.com/jbeder/yaml-cpp.git" "yaml-cpp_fetch_content-src"
-    WORKING_DIRECTORY "/Users/snamba/Dropbox/Fastq2Sam/build/_deps"
+    WORKING_DIRECTORY "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps"
     RESULT_VARIABLE error_code
     )
   math(EXPR number_of_tries "${number_of_tries} + 1")
@@ -33,7 +33,7 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"  checkout yaml-cpp-0.7.0 --
-  WORKING_DIRECTORY "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
+  WORKING_DIRECTORY "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
@@ -44,23 +44,23 @@ set(init_submodules TRUE)
 if(init_submodules)
   execute_process(
     COMMAND "/usr/bin/git"  submodule update --recursive --init 
-    WORKING_DIRECTORY "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
+    WORKING_DIRECTORY "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
     RESULT_VARIABLE error_code
     )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src'")
+  message(FATAL_ERROR "Failed to update submodules in: '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
   COMMAND ${CMAKE_COMMAND} -E copy
-    "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitinfo.txt"
-    "/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt"
+    "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitinfo.txt"
+    "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/Users/snamba/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-subbuild/yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitclone-lastrun.txt'")
 endif()
 

@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.1/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake3
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.1/bin/cmake -E rm -f
+RM = /usr/bin/cmake3 -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/snamba/Dropbox/Fastq2Sam/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/snamba/Dropbox/Fastq2Sam/build
+CMAKE_BINARY_DIR = /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fastq2sam.dir/depend.make
@@ -77,33 +77,33 @@ include CMakeFiles/fastq2sam.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fastq2sam.dir/flags.make
 
-CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o: CMakeFiles/fastq2sam.dir/flags.make
-CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o: /Users/snamba/Dropbox/Fastq2Sam/src/fastq2sam.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o"
-	/usr/local/bin/g++-13  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o -c /Users/snamba/Dropbox/Fastq2Sam/src/fastq2sam.cpp
+CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o: CMakeFiles/fastq2sam.dir/flags.make
+CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o: ../src/fastq2sam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o"
+	/home/conda/anaconda3/envs/gxx13/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o -c /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/src/fastq2sam.cpp
 
-CMakeFiles/fastq2sam.dir/fastq2sam.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fastq2sam.dir/fastq2sam.cpp.i"
-	/usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/snamba/Dropbox/Fastq2Sam/src/fastq2sam.cpp > CMakeFiles/fastq2sam.dir/fastq2sam.cpp.i
+CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.i"
+	/home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/src/fastq2sam.cpp > CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.i
 
-CMakeFiles/fastq2sam.dir/fastq2sam.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fastq2sam.dir/fastq2sam.cpp.s"
-	/usr/local/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/snamba/Dropbox/Fastq2Sam/src/fastq2sam.cpp -o CMakeFiles/fastq2sam.dir/fastq2sam.cpp.s
+CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.s"
+	/home/conda/anaconda3/envs/gxx13/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/src/fastq2sam.cpp -o CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.s
 
 # Object files for target fastq2sam
 fastq2sam_OBJECTS = \
-"CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o"
+"CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o"
 
 # External object files for target fastq2sam
 fastq2sam_EXTERNAL_OBJECTS =
 
-fastq2sam: CMakeFiles/fastq2sam.dir/fastq2sam.cpp.o
+fastq2sam: CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.o
 fastq2sam: CMakeFiles/fastq2sam.dir/build.make
-fastq2sam: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libz.tbd
-fastq2sam: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libbz2.tbd
+fastq2sam: /home/conda/anaconda3/envs/gxx13/lib/libz.so
+fastq2sam: /home/conda/anaconda3/envs/gxx13/lib/libbz2.so
 fastq2sam: _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a
 fastq2sam: CMakeFiles/fastq2sam.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fastq2sam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fastq2sam"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fastq2sam.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,6 +116,6 @@ CMakeFiles/fastq2sam.dir/clean:
 .PHONY : CMakeFiles/fastq2sam.dir/clean
 
 CMakeFiles/fastq2sam.dir/depend:
-	cd /Users/snamba/Dropbox/Fastq2Sam/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/snamba/Dropbox/Fastq2Sam/src /Users/snamba/Dropbox/Fastq2Sam/src /Users/snamba/Dropbox/Fastq2Sam/build /Users/snamba/Dropbox/Fastq2Sam/build /Users/snamba/Dropbox/Fastq2Sam/build/CMakeFiles/fastq2sam.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/sinnh/Dropbox/Fastq2Sam /mnt/c/Users/sinnh/Dropbox/Fastq2Sam /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build /mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/CMakeFiles/fastq2sam.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fastq2sam.dir/depend
 
