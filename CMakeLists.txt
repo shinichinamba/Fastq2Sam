@@ -1,27 +1,46 @@
 cmake_minimum_required (VERSION 3.4)
 project (fastq2sam CXX)
-set (CMAKE_BUILD_TYPE Release)
+set (CMAKE_BUILD_TYPE Debug) # Release if on linux, Debug on Mac
 
-# set (BUILD_SHARED_LIBS false)
-# set (CMAKE_EXE_LINKER_FLAGS -static)
-# set (ZLIB_USE_STATIC_LIBS ON)
-# set (BZIP2_STATIC_LIBRARIES ON)
+set (BUILD_SHARED_LIBS false)
+set (ZLIB_USE_STATIC_LIBS ON)
+if ("${CMAKE_BUILD_TYPE}" STREQUAL "Release")
+    set (OPENSSL_USE_STATIC_LIBS ON)
+endif()
 
 # add seqan3 to search path
 list (APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/seqan3/build_system")
 # add the Sharg Parser to search path
 list (APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/sharg-parser/build_system")
  
+find_package(OpenSSL REQUIRED)
+message(STATUS "Using OpenSSL ${OPENSSL_VERSION}")
 # require seqan3 with a version between >=3.0.0 and <4.0.0
 find_package (seqan3 3.0 REQUIRED)
 find_package (sharg 1.0 REQUIRED)
 
+
 # build app with seqan3
-add_executable (fastq2sam src/fastq2sam.cpp) # src/fastq2sam.seqan3.2.cpp
-target_link_libraries (fastq2sam seqan3::seqan3 sharg::sharg) #  -static
+add_executable (fastq2sam 
+    src/bamhash.cpp
+    src/convert_phred_score.cpp
+    src/fastq_metadata.cpp
+    src/id_parser.cpp
+    src/phred.cpp
+    src/scan_fastq.cpp
+    src/split.cpp
+    # src/to_sam.cpp # included in src/fastq2sam.cpp 
+    src/fastq2sam.cpp 
+)
+
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "Release")
-    target_compile_options(fastq2sam PUBLIC -O3 -Wall)
+    target_link_libraries (fastq2sam PUBLIC seqan3::seqan3 sharg::sharg ${OPENSSL_CRYPTO_LIBRARIES} -static -static-libstdc++)
+    target_compile_options(fastq2sam PUBLIC -O3 -Wall -Wextra)
+else()
+    target_link_libraries (fastq2sam PUBLIC seqan3::seqan3 sharg::sharg ${OPENSSL_CRYPTO_LIBRARIES})
+    target_compile_options(fastq2sam PUBLIC -g -Wall -Wextra)
 endif()
+target_include_directories(fastq2sam PUBLIC ${OPENSSL_INCLUDE_DIR})
 target_compile_features(fastq2sam PUBLIC cxx_std_20)
 
 # ctest

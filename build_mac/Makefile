@@ -168,6 +168,60 @@ yaml-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build
 .PHONY : yaml-cpp/fast
 
+src/bamhash.o: src/bamhash.cpp.o
+
+.PHONY : src/bamhash.o
+
+# target to build an object file
+src/bamhash.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/bamhash.cpp.o
+.PHONY : src/bamhash.cpp.o
+
+src/bamhash.i: src/bamhash.cpp.i
+
+.PHONY : src/bamhash.i
+
+# target to preprocess a source file
+src/bamhash.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/bamhash.cpp.i
+.PHONY : src/bamhash.cpp.i
+
+src/bamhash.s: src/bamhash.cpp.s
+
+.PHONY : src/bamhash.s
+
+# target to generate assembly for a file
+src/bamhash.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/bamhash.cpp.s
+.PHONY : src/bamhash.cpp.s
+
+src/convert_phred_score.o: src/convert_phred_score.cpp.o
+
+.PHONY : src/convert_phred_score.o
+
+# target to build an object file
+src/convert_phred_score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/convert_phred_score.cpp.o
+.PHONY : src/convert_phred_score.cpp.o
+
+src/convert_phred_score.i: src/convert_phred_score.cpp.i
+
+.PHONY : src/convert_phred_score.i
+
+# target to preprocess a source file
+src/convert_phred_score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/convert_phred_score.cpp.i
+.PHONY : src/convert_phred_score.cpp.i
+
+src/convert_phred_score.s: src/convert_phred_score.cpp.s
+
+.PHONY : src/convert_phred_score.s
+
+# target to generate assembly for a file
+src/convert_phred_score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/convert_phred_score.cpp.s
+.PHONY : src/convert_phred_score.cpp.s
+
 src/fastq2sam.o: src/fastq2sam.cpp.o
 
 .PHONY : src/fastq2sam.o
@@ -195,6 +249,141 @@ src/fastq2sam.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq2sam.cpp.s
 .PHONY : src/fastq2sam.cpp.s
 
+src/fastq_metadata.o: src/fastq_metadata.cpp.o
+
+.PHONY : src/fastq_metadata.o
+
+# target to build an object file
+src/fastq_metadata.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq_metadata.cpp.o
+.PHONY : src/fastq_metadata.cpp.o
+
+src/fastq_metadata.i: src/fastq_metadata.cpp.i
+
+.PHONY : src/fastq_metadata.i
+
+# target to preprocess a source file
+src/fastq_metadata.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq_metadata.cpp.i
+.PHONY : src/fastq_metadata.cpp.i
+
+src/fastq_metadata.s: src/fastq_metadata.cpp.s
+
+.PHONY : src/fastq_metadata.s
+
+# target to generate assembly for a file
+src/fastq_metadata.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/fastq_metadata.cpp.s
+.PHONY : src/fastq_metadata.cpp.s
+
+src/id_parser.o: src/id_parser.cpp.o
+
+.PHONY : src/id_parser.o
+
+# target to build an object file
+src/id_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/id_parser.cpp.o
+.PHONY : src/id_parser.cpp.o
+
+src/id_parser.i: src/id_parser.cpp.i
+
+.PHONY : src/id_parser.i
+
+# target to preprocess a source file
+src/id_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/id_parser.cpp.i
+.PHONY : src/id_parser.cpp.i
+
+src/id_parser.s: src/id_parser.cpp.s
+
+.PHONY : src/id_parser.s
+
+# target to generate assembly for a file
+src/id_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/id_parser.cpp.s
+.PHONY : src/id_parser.cpp.s
+
+src/phred.o: src/phred.cpp.o
+
+.PHONY : src/phred.o
+
+# target to build an object file
+src/phred.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/phred.cpp.o
+.PHONY : src/phred.cpp.o
+
+src/phred.i: src/phred.cpp.i
+
+.PHONY : src/phred.i
+
+# target to preprocess a source file
+src/phred.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/phred.cpp.i
+.PHONY : src/phred.cpp.i
+
+src/phred.s: src/phred.cpp.s
+
+.PHONY : src/phred.s
+
+# target to generate assembly for a file
+src/phred.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/phred.cpp.s
+.PHONY : src/phred.cpp.s
+
+src/scan_fastq.o: src/scan_fastq.cpp.o
+
+.PHONY : src/scan_fastq.o
+
+# target to build an object file
+src/scan_fastq.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/scan_fastq.cpp.o
+.PHONY : src/scan_fastq.cpp.o
+
+src/scan_fastq.i: src/scan_fastq.cpp.i
+
+.PHONY : src/scan_fastq.i
+
+# target to preprocess a source file
+src/scan_fastq.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/scan_fastq.cpp.i
+.PHONY : src/scan_fastq.cpp.i
+
+src/scan_fastq.s: src/scan_fastq.cpp.s
+
+.PHONY : src/scan_fastq.s
+
+# target to generate assembly for a file
+src/scan_fastq.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/scan_fastq.cpp.s
+.PHONY : src/scan_fastq.cpp.s
+
+src/split.o: src/split.cpp.o
+
+.PHONY : src/split.o
+
+# target to build an object file
+src/split.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/split.cpp.o
+.PHONY : src/split.cpp.o
+
+src/split.i: src/split.cpp.i
+
+.PHONY : src/split.i
+
+# target to preprocess a source file
+src/split.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/split.cpp.i
+.PHONY : src/split.cpp.i
+
+src/split.s: src/split.cpp.s
+
+.PHONY : src/split.s
+
+# target to generate assembly for a file
+src/split.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fastq2sam.dir/build.make CMakeFiles/fastq2sam.dir/src/split.cpp.s
+.PHONY : src/split.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,9 +395,30 @@ help:
 	@echo "... test"
 	@echo "... fastq2sam"
 	@echo "... yaml-cpp"
+	@echo "... src/bamhash.o"
+	@echo "... src/bamhash.i"
+	@echo "... src/bamhash.s"
+	@echo "... src/convert_phred_score.o"
+	@echo "... src/convert_phred_score.i"
+	@echo "... src/convert_phred_score.s"
 	@echo "... src/fastq2sam.o"
 	@echo "... src/fastq2sam.i"
 	@echo "... src/fastq2sam.s"
+	@echo "... src/fastq_metadata.o"
+	@echo "... src/fastq_metadata.i"
+	@echo "... src/fastq_metadata.s"
+	@echo "... src/id_parser.o"
+	@echo "... src/id_parser.i"
+	@echo "... src/id_parser.s"
+	@echo "... src/phred.o"
+	@echo "... src/phred.i"
+	@echo "... src/phred.s"
+	@echo "... src/scan_fastq.o"
+	@echo "... src/scan_fastq.i"
+	@echo "... src/scan_fastq.s"
+	@echo "... src/split.o"
+	@echo "... src/split.i"
+	@echo "... src/split.s"
 .PHONY : help
 
 

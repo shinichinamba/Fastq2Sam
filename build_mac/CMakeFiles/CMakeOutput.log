@@ -15,21 +15,21 @@ The CXX compiler identification is GNU, found in "/Users/snamba/Dropbox/Fastq2Sa
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e340d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e340d.dir/build.make CMakeFiles/cmTC_e340d.dir/build
-Building CXX object CMakeFiles/cmTC_e340d.dir/testCXXCompiler.cxx.o
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_e340d.dir/testCXXCompiler.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_e340d
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e340d.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_e340d.dir/testCXXCompiler.cxx.o  -o cmTC_e340d 
+Run Build Command(s):/usr/bin/make cmTC_673ad/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_673ad.dir/build.make CMakeFiles/cmTC_673ad.dir/build
+Building CXX object CMakeFiles/cmTC_673ad.dir/testCXXCompiler.cxx.o
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_673ad.dir/testCXXCompiler.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_673ad
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_673ad.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_673ad.dir/testCXXCompiler.cxx.o  -o cmTC_673ad 
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b0387/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b0387.dir/build.make CMakeFiles/cmTC_b0387.dir/build
-Building CXX object CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl,-v -o CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/make cmTC_577eb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_577eb.dir/build.make CMakeFiles/cmTC_577eb.dir/build
+Building CXX object CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl,-v -o CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/g++-13
 Target: x86_64-apple-darwin21
@@ -37,8 +37,8 @@ Configured with: ../configure --prefix=/usr/local/opt/gcc --libdir=/usr/local/op
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 13.1.0 (Homebrew GCC 13.1.0) 
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_b0387.dir/'
- /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/cc1plus -quiet -v -iprefix /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/ -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_b0387.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=12.0.0 -mtune=core2 -version -o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccvehVCW.s
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_577eb.dir/'
+ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/cc1plus -quiet -v -iprefix /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/ -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_577eb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=12.0.0 -mtune=core2 -version -o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//cccmKQUS.s
 GNU C++17 (Homebrew GCC 13.1.0) version 13.1.0 (x86_64-apple-darwin21)
 	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version isl-0.26-GMP
 
@@ -64,19 +64,19 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks
 End of search list.
 Compiler executable checksum: e5ba2421883fc0e9f14f96691701f76b
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_b0387.dir/'
- as -arch x86_64 -v -mmacosx-version-min=12.0 -mllvm -x86-pad-for-align=false -force_cpusubtype_ALL -o CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccvehVCW.s
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_577eb.dir/'
+ as -arch x86_64 -v -mmacosx-version-min=12.0 -mllvm -x86-pad-for-align=false -force_cpusubtype_ALL -o CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//cccmKQUS.s
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 Target: x86_64-apple-darwin21.4.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx12.0.0 -filetype obj -main-file-name ccvehVCW.s -target-cpu penryn -fdebug-compilation-dir /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -x86-pad-for-align=false -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccvehVCW.s
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx12.0.0 -filetype obj -main-file-name cccmKQUS.s -target-cpu penryn -fdebug-compilation-dir /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -x86-pad-for-align=false -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//cccmKQUS.s
 COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/
 LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_b0387
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0387.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib -v -Wl,-v CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b0387 
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_577eb
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_577eb.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib -v -Wl,-v CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_577eb 
 Using built-in specs.
 COLLECT_GCC=/usr/local/bin/g++-13
 COLLECT_LTO_WRAPPER=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/lto-wrapper
@@ -87,10 +87,10 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 13.1.0 (Homebrew GCC 13.1.0) 
 COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/
 LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../
-COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-L/usr/local/opt/ruby/lib' '-v' '-o' 'cmTC_b0387' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'cmTC_b0387.'
- /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2 -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_b0387 -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current
+COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-L/usr/local/opt/ruby/lib' '-v' '-o' 'cmTC_577eb' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'cmTC_577eb.'
+ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2 -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_577eb -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current
 collect2 version 13.1.0
-/usr/bin/ld -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_b0387 -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current
+/usr/bin/ld -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_577eb -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current
 @(#)PROGRAM:ld  PROJECT:ld64-711
 BUILD 18:11:15 Aug  3 2021
 configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -130,9 +130,9 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b0387/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b0387.dir/build.make CMakeFiles/cmTC_b0387.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl -v -o CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_577eb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_577eb.dir/build.make CMakeFiles/cmTC_577eb.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -v -Wl -v -o CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/g++-13]
   ignore line: [Target: x86_64-apple-darwin21]
@@ -140,8 +140,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 13.1.0 (Homebrew GCC 13.1.0) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_b0387.dir/']
-  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/cc1plus -quiet -v -iprefix /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/ -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_b0387.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=12.0.0 -mtune=core2 -version -o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccvehVCW.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_577eb.dir/']
+  ignore line: [ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/cc1plus -quiet -v -iprefix /usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/ -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk /usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -fPIC -quiet -dumpdir CMakeFiles/cmTC_577eb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mmacosx-version-min=12.0.0 -mtune=core2 -version -o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//cccmKQUS.s]
   ignore line: [GNU C++17 (Homebrew GCC 13.1.0) version 13.1.0 (x86_64-apple-darwin21)]
   ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version isl-0.26-GMP]
   ignore line: []
@@ -167,19 +167,19 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks]
   ignore line: [End of search list.]
   ignore line: [Compiler executable checksum: e5ba2421883fc0e9f14f96691701f76b]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_b0387.dir/']
-  ignore line: [ as -arch x86_64 -v -mmacosx-version-min=12.0 -mllvm -x86-pad-for-align=false -force_cpusubtype_ALL -o CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccvehVCW.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_577eb.dir/']
+  ignore line: [ as -arch x86_64 -v -mmacosx-version-min=12.0 -mllvm -x86-pad-for-align=false -force_cpusubtype_ALL -o CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//cccmKQUS.s]
   ignore line: [Apple clang version 13.0.0 (clang-1300.0.29.3)]
   ignore line: [Target: x86_64-apple-darwin21.4.0]
   ignore line: [Thread model: posix]
   ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx12.0.0 -filetype obj -main-file-name ccvehVCW.s -target-cpu penryn -fdebug-compilation-dir /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -x86-pad-for-align=false -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//ccvehVCW.s]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple x86_64-apple-macosx12.0.0 -filetype obj -main-file-name cccmKQUS.s -target-cpu penryn -fdebug-compilation-dir /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.3)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -x86-pad-for-align=false -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o /var/folders/8x/3tfr_ssx4g79rjxbsw2r71nh0000gn/T//cccmKQUS.s]
   ignore line: [COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/]
   ignore line: [LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_b0387]
-  ignore line: [/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0387.dir/link.txt --verbose=1]
-  ignore line: [/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -L/usr/local/opt/ruby/lib -v -Wl -v CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b0387 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-v' '-o' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_577eb]
+  ignore line: [/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_577eb.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -L/usr/local/opt/ruby/lib -v -Wl -v CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_577eb ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/local/bin/g++-13]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/lto-wrapper]
@@ -190,8 +190,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 13.1.0 (Homebrew GCC 13.1.0) ]
   ignore line: [COMPILER_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/]
   ignore line: [LIBRARY_PATH=/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-L/usr/local/opt/ruby/lib' '-v' '-o' 'cmTC_b0387' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'cmTC_b0387.']
-  link line: [ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2 -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_b0387 -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current]
+  ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk' '-L/usr/local/opt/ruby/lib' '-v' '-o' 'cmTC_577eb' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-shared-libgcc' '-mtune=core2' '-dumpdir' 'cmTC_577eb.']
+  link line: [ /usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2 -dynamic -arch x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -macosx_version_min 12.0.0 -o cmTC_577eb -L/usr/local/opt/ruby/lib -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lgcc_s.1.1 -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.1.0/lib/gcc/current]
     arg [/usr/local/Cellar/gcc/13.1.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/collect2] ==> ignore
     arg [-dynamic] ==> ignore
     arg [-arch] ==> ignore
@@ -201,7 +201,7 @@ Parsed CXX implicit link information from above output:
     arg [-macosx_version_min] ==> ignore
     arg [12.0.0] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b0387] ==> ignore
+    arg [cmTC_577eb] ==> ignore
     arg [-L/usr/local/opt/ruby/lib] ==> dir [/usr/local/opt/ruby/lib]
     arg [-L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13] ==> dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13]
     arg [-L/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc] ==> dir [/usr/local/Cellar/gcc/13.1.0/bin/../lib/gcc/current/gcc]
@@ -209,7 +209,7 @@ Parsed CXX implicit link information from above output:
     arg [-search_paths_first] ==> ignore
     arg [-headerpad_max_install_names] ==> ignore
     arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_b0387.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_577eb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lgcc_s.1.1] ==> lib [gcc_s.1.1]
     arg [-lgcc] ==> lib [gcc]
@@ -244,12 +244,12 @@ Parsed CXX implicit link information from above output:
 Performing C++ SOURCE FILE Test CPP20_FLAG_STD20 succeeded with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_daede/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_daede.dir/build.make CMakeFiles/cmTC_daede.dir/build
-Building CXX object CMakeFiles/cmTC_daede.dir/src.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCPP20_FLAG_STD20  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_daede.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_daede
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daede.dir/link.txt --verbose=1
-/usr/local/bin/g++-13   -DCPP20_FLAG_STD20  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_daede.dir/src.cxx.o  -o cmTC_daede 
+Run Build Command(s):/usr/bin/make cmTC_eb781/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_eb781.dir/build.make CMakeFiles/cmTC_eb781.dir/build
+Building CXX object CMakeFiles/cmTC_eb781.dir/src.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCPP20_FLAG_STD20  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_eb781.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_eb781
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb781.dir/link.txt --verbose=1
+/usr/local/bin/g++-13   -DCPP20_FLAG_STD20  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_eb781.dir/src.cxx.o  -o cmTC_eb781 
 
 
 Source file was:
@@ -260,24 +260,24 @@ Source file was:
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a5aee/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a5aee.dir/build.make CMakeFiles/cmTC_a5aee.dir/build
-Building CXX object CMakeFiles/cmTC_a5aee.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_a5aee.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_a5aee
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5aee.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_a5aee.dir/CheckIncludeFile.cxx.o  -o cmTC_a5aee 
+Run Build Command(s):/usr/bin/make cmTC_09b65/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_09b65.dir/build.make CMakeFiles/cmTC_09b65.dir/build
+Building CXX object CMakeFiles/cmTC_09b65.dir/CheckIncludeFile.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_09b65.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_09b65
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09b65.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_09b65.dir/CheckIncludeFile.cxx.o  -o cmTC_09b65 
 
 
 
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_184ae/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_184ae.dir/build.make CMakeFiles/cmTC_184ae.dir/build
-Building CXX object CMakeFiles/cmTC_184ae.dir/src.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_184ae.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_184ae
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_184ae.dir/link.txt --verbose=1
-/usr/local/bin/g++-13   -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_184ae.dir/src.cxx.o  -o cmTC_184ae 
+Run Build Command(s):/usr/bin/make cmTC_5a1a2/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5a1a2.dir/build.make CMakeFiles/cmTC_5a1a2.dir/build
+Building CXX object CMakeFiles/cmTC_5a1a2.dir/src.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_5a1a2.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5a1a2
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a1a2.dir/link.txt --verbose=1
+/usr/local/bin/g++-13   -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_5a1a2.dir/src.cxx.o  -o cmTC_5a1a2 
 
 
 Source file was:
@@ -304,73 +304,48 @@ int main(void)
 Determining if the include file sdsl/version.hpp exists passed with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7bb1a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7bb1a.dir/build.make CMakeFiles/cmTC_7bb1a.dir/build
-Building CXX object CMakeFiles/cmTC_7bb1a.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_7bb1a.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_7bb1a
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bb1a.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_7bb1a.dir/CheckIncludeFile.cxx.o  -o cmTC_7bb1a 
+Run Build Command(s):/usr/bin/make cmTC_49602/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_49602.dir/build.make CMakeFiles/cmTC_49602.dir/build
+Building CXX object CMakeFiles/cmTC_49602.dir/CheckIncludeFile.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_49602.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_49602
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49602.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_49602.dir/CheckIncludeFile.cxx.o  -o cmTC_49602 
 
 
 
 Determining if the include file cereal/cereal.hpp exists passed with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_08dc1/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_08dc1.dir/build.make CMakeFiles/cmTC_08dc1.dir/build
-Building CXX object CMakeFiles/cmTC_08dc1.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_08dc1.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_08dc1
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08dc1.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_08dc1.dir/CheckIncludeFile.cxx.o  -o cmTC_08dc1 
+Run Build Command(s):/usr/bin/make cmTC_9e918/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9e918.dir/build.make CMakeFiles/cmTC_9e918.dir/build
+Building CXX object CMakeFiles/cmTC_9e918.dir/CheckIncludeFile.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_9e918.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_9e918
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e918.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_9e918.dir/CheckIncludeFile.cxx.o  -o cmTC_9e918 
 
 
 
-Determining if the BZ2_bzCompressInit exist passed with the following output:
-Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_1c5b0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1c5b0.dir/build.make CMakeFiles/cmTC_1c5b0.dir/build
-Building CXX object CMakeFiles/cmTC_1c5b0.dir/CheckSymbolExists.cxx.o
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_1c5b0.dir/CheckSymbolExists.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-Linking CXX executable cmTC_1c5b0
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c5b0.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_1c5b0.dir/CheckSymbolExists.cxx.o  -o cmTC_1c5b0  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libbz2.tbd 
-
-
-File /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <bzlib.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef BZ2_bzCompressInit
-  return ((int*)(&BZ2_bzCompressInit))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
 Determining if the include file execinfo.h exists passed with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e8d05/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e8d05.dir/build.make CMakeFiles/cmTC_e8d05.dir/build
-Building CXX object CMakeFiles/cmTC_e8d05.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_e8d05.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_e8d05
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8d05.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_e8d05.dir/CheckIncludeFile.cxx.o  -o cmTC_e8d05 
+Run Build Command(s):/usr/bin/make cmTC_27b1e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_27b1e.dir/build.make CMakeFiles/cmTC_27b1e.dir/build
+Building CXX object CMakeFiles/cmTC_27b1e.dir/CheckIncludeFile.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/sdsl-lite/include -I/Users/snamba/Dropbox/Fastq2Sam/seqan3/submodules/cereal/include  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_27b1e.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_27b1e
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27b1e.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_27b1e.dir/CheckIncludeFile.cxx.o  -o cmTC_27b1e 
 
 
 
 Performing C++ SOURCE FILE Test CXX20_FLAG succeeded with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_bec84/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bec84.dir/build.make CMakeFiles/cmTC_bec84.dir/build
-Building CXX object CMakeFiles/cmTC_bec84.dir/src.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -DCXX20_FLAG  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_bec84.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_bec84
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bec84.dir/link.txt --verbose=1
-/usr/local/bin/g++-13   -DCXX20_FLAG  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_bec84.dir/src.cxx.o  -o cmTC_bec84 
+Run Build Command(s):/usr/bin/make cmTC_58bbf/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_58bbf.dir/build.make CMakeFiles/cmTC_58bbf.dir/build
+Building CXX object CMakeFiles/cmTC_58bbf.dir/src.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -DCXX20_FLAG  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_58bbf.dir/src.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_58bbf
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58bbf.dir/link.txt --verbose=1
+/usr/local/bin/g++-13   -DCXX20_FLAG  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_58bbf.dir/src.cxx.o  -o cmTC_58bbf 
 
 
 Source file was:
@@ -381,12 +356,12 @@ Source file was:
 Determining if the include file execinfo.h exists passed with the following output:
 Change Dir: /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_97eb3/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_97eb3.dir/build.make CMakeFiles/cmTC_97eb3.dir/build
-Building CXX object CMakeFiles/cmTC_97eb3.dir/CheckIncludeFile.cxx.o
-/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_97eb3.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
-Linking CXX executable cmTC_97eb3
-/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97eb3.dir/link.txt --verbose=1
-/usr/local/bin/g++-13    -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_97eb3.dir/CheckIncludeFile.cxx.o  -o cmTC_97eb3 
+Run Build Command(s):/usr/bin/make cmTC_679ba/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_679ba.dir/build.make CMakeFiles/cmTC_679ba.dir/build
+Building CXX object CMakeFiles/cmTC_679ba.dir/CheckIncludeFile.cxx.o
+/usr/local/bin/g++-13   -I/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include  -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk   -o CMakeFiles/cmTC_679ba.dir/CheckIncludeFile.cxx.o -c /Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_679ba
+/usr/local/Cellar/cmake/3.17.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_679ba.dir/link.txt --verbose=1
+/usr/local/bin/g++-13    -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/ruby/lib  CMakeFiles/cmTC_679ba.dir/CheckIncludeFile.cxx.o  -o cmTC_679ba 
 
 
 

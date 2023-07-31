@@ -1,0 +1,7 @@
+/build/
+/build_mac/
+/sharg-parser/
+/seqan3/
+.vscode/
+*.dSYM
+*.DS_Store

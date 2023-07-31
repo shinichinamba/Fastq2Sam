@@ -21,13 +21,14 @@ LabelsForSubprojects:
 
 # Submission information
 SubmitURL: http://
+SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake3" "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
-MakeCommand: /usr/bin/cmake3 --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/home/conda/cmake-3.27.0-rc3-linux-x86_64/bin/cmake" "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build/_deps/yaml-cpp_fetch_content-src"
+MakeCommand: /home/conda/cmake-3.27.0-rc3-linux-x86_64/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -35,11 +36,11 @@ UpdateVersionOnly:
 
 # CVS options
 # Default is "-d -P -A"
-CVSCommand: CVSCOMMAND-NOTFOUND
-CVSUpdateOptions: -d -A -P
+CVSCommand: 
+CVSUpdateOptions: 
 
 # Subversion options
-SVNCommand: SVNCOMMAND-NOTFOUND
+SVNCommand: 
 SVNOptions: 
 SVNUpdateOptions: 
 
@@ -50,7 +51,7 @@ GITUpdateOptions:
 GITUpdateCustom: 
 
 # Perforce options
-P4Command: P4COMMAND-NOTFOUND
+P4Command: 
 P4Client: 
 P4Options: 
 P4UpdateOptions: 
@@ -71,6 +72,8 @@ ValgrindCommand:
 ValgrindCommandOptions: 
 DrMemoryCommand: 
 DrMemoryCommandOptions: 
+CudaSanitizerCommand: 
+CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
 MemoryCheckCommand: /opt/rh/devtoolset-8/root/usr/bin/valgrind
@@ -80,10 +83,6 @@ MemoryCheckSuppressionFile:
 # Coverage
 CoverageCommand: /home/conda/anaconda3/envs/gxx13/bin/gcov
 CoverageExtraFlags: -l
-
-# Cluster commands
-SlurmBatchCommand: SLURM_SBATCH_COMMAND-NOTFOUND
-SlurmRunCommand: SLURM_SRUN_COMMAND-NOTFOUND
 
 # Testing options
 # TimeOut is the amount of time in seconds to wait for processes

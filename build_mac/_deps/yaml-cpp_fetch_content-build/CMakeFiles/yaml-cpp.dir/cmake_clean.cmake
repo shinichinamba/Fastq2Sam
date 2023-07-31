@@ -28,8 +28,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o"
   "CMakeFiles/yaml-cpp.dir/src/stream.cpp.o"
   "CMakeFiles/yaml-cpp.dir/src/tag.cpp.o"
-  "libyaml-cpp.a"
-  "libyaml-cpp.pdb"
+  "libyaml-cppd.a"
+  "libyaml-cppd.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

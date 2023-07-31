@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libyaml-cpp.a"
+  "libyaml-cppd.a"
 )

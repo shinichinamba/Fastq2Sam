@@ -1,4 +1,4 @@
-test_run 6 0.0225031
-diff_after_test_run 6 0.00228558
-clean 6 0.00107353
+test_run 4 0.0562456
+diff_after_test_run 4 0.00255421
+clean 4 0.0013176
 ---

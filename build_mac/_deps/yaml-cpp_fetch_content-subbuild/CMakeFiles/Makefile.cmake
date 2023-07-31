@@ -10,10 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-cfgcmd.txt.in"
-  "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeDetermineSystem.cmake"
   "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeInitializeConfigs.cmake"
-  "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeSystem.cmake.in"
   "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/local/Cellar/cmake/3.17.1/share/cmake/Modules/ExternalProject.cmake"
@@ -34,7 +32,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.17.1/CMakeSystem.cmake"
   "yaml-cpp_fetch_content-populate-prefix/src/yaml-cpp_fetch_content-populate-stamp/yaml-cpp_fetch_content-populate-gitinfo.txt"
   "yaml-cpp_fetch_content-populate-prefix/tmp/yaml-cpp_fetch_content-populate-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"

@@ -489,43 +489,43 @@ yaml__cpp_OBJECTS = \
 # External object files for target yaml-cpp
 yaml__cpp_EXTERNAL_OBJECTS =
 
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make
-_deps/yaml-cpp_fetch_content-build/libyaml-cpp.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX static library libyaml-cpp.a"
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build.make
+_deps/yaml-cpp_fetch_content-build/libyaml-cppd.a: _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/snamba/Dropbox/Fastq2Sam/build_mac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX static library libyaml-cppd.a"
 	cd /Users/snamba/Dropbox/Fastq2Sam/build_mac/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -P CMakeFiles/yaml-cpp.dir/cmake_clean_target.cmake
 	cd /Users/snamba/Dropbox/Fastq2Sam/build_mac/_deps/yaml-cpp_fetch_content-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yaml-cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build: _deps/yaml-cpp_fetch_content-build/libyaml-cpp.a
+_deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build: _deps/yaml-cpp_fetch_content-build/libyaml-cppd.a
 
 .PHONY : _deps/yaml-cpp_fetch_content-build/CMakeFiles/yaml-cpp.dir/build
 

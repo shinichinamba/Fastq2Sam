@@ -17,15 +17,6 @@
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
-//Path to a file.
-BZIP2_INCLUDE_DIR:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include
-
-//Path to a library.
-BZIP2_LIBRARY_DEBUG:FILEPATH=BZIP2_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-BZIP2_LIBRARY_RELEASE:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libbz2.tbd
-
 //Path to a program.
 BZRCOMMAND:FILEPATH=BZRCOMMAND-NOTFOUND
 
@@ -335,8 +326,20 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
+//Path to a library.
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/local/Cellar/openssl@3/3.1.1_1/lib/libcrypto.dylib
+
+//Path to a file.
+OPENSSL_INCLUDE_DIR:PATH=/usr/local/Cellar/openssl@3/3.1.1_1/include
+
+//Path to a library.
+OPENSSL_SSL_LIBRARY:FILEPATH=/usr/local/Cellar/openssl@3/3.1.1_1/lib/libssl.dylib
+
 //Path to a program.
 P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/local/bin/pkg-config
 
 //Require cereal and fail if not present.
 SEQAN3_CEREAL:BOOL=OFF
@@ -351,7 +354,7 @@ SEQAN3_DISABLE_COMPILER_CHECK:BOOL=OFF
 SEQAN3_INCLUDE_DIR:PATH=/Users/snamba/Dropbox/Fastq2Sam/seqan3/include
 
 //Don't use BZip2, even if present.
-SEQAN3_NO_BZIP2:BOOL=OFF
+SEQAN3_NO_BZIP2:BOOL=ON
 
 //Don't use cereal, even if present.
 SEQAN3_NO_CEREAL:BOOL=OFF
@@ -369,7 +372,7 @@ SHARG_CLONE_DIR:PATH=/Users/snamba/Dropbox/Fastq2Sam/sharg-parser
 SHARG_INCLUDE_DIR:PATH=/Users/snamba/Dropbox/Fastq2Sam/sharg-parser/include
 
 //Don't use BZip2, even if present.
-SHARG_NO_BZIP2:BOOL=OFF
+SHARG_NO_BZIP2:BOOL=ON
 
 //Don't use ZLIB, even if present.
 SHARG_NO_ZLIB:BOOL=OFF
@@ -425,6 +428,12 @@ fastq2sam_BINARY_DIR:STATIC=/Users/snamba/Dropbox/Fastq2Sam/build_mac
 //Value Computed by CMake
 fastq2sam_SOURCE_DIR:STATIC=/Users/snamba/Dropbox/Fastq2Sam
 
+//Path to a library.
+pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/local/Cellar/openssl@3/3.1.1_1/lib/libcrypto.dylib
+
+//Path to a library.
+pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/local/Cellar/openssl@3/3.1.1_1/lib/libssl.dylib
+
 //The directory containing a CMake configuration file for seqan3.
 seqan3_DIR:PATH=/Users/snamba/Dropbox/Fastq2Sam/seqan3/build_system
 
@@ -439,14 +448,6 @@ yaml-cpp_DIR:PATH=yaml-cpp_DIR-NOTFOUND
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: BZIP2_INCLUDE_DIR
-BZIP2_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: BZIP2_LIBRARY_DEBUG
-BZIP2_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: BZIP2_LIBRARY_RELEASE
-BZIP2_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//Have symbol BZ2_bzCompressInit
-BZIP2_NEED_PREFIX:INTERNAL=1
 //ADVANCED property for variable: BZRCOMMAND
 BZRCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -636,6 +637,8 @@ CXX20_BUILTIN:INTERNAL=
 CXX20_FLAG:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding OpenSSL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/local/Cellar/openssl@3/3.1.1_1/lib/libcrypto.dylib][/usr/local/Cellar/openssl@3/3.1.1_1/include][c ][v()]
 //Details about finding seqan3
 FIND_PACKAGE_MESSAGE_DETAILS_seqan3:INTERNAL=[/Users/snamba/Dropbox/Fastq2Sam/seqan3/include][v(3.0)]
 //Details about finding sharg
@@ -650,8 +653,16 @@ MAKECOMMAND-ADVANCED:INTERNAL=1
 MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
+OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_INCLUDE_DIR
+OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_SSL_LIBRARY
+OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: P4COMMAND
 P4COMMAND-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 SEQAN3_PLATFORM_TEST:INTERNAL=TRUE
 //Result of TRY_COMPILE
@@ -674,6 +685,41 @@ ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+_OPENSSL_CFLAGS:INTERNAL=-I/usr/local/Cellar/openssl@3/3.1.1_1/include
+_OPENSSL_CFLAGS_I:INTERNAL=
+_OPENSSL_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_FOUND:INTERNAL=1
+_OPENSSL_INCLUDEDIR:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/include
+_OPENSSL_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/include
+_OPENSSL_LDFLAGS:INTERNAL=-L/usr/local/Cellar/openssl@3/3.1.1_1/lib;-lssl;-lcrypto
+_OPENSSL_LDFLAGS_OTHER:INTERNAL=
+_OPENSSL_LIBDIR:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/lib
+_OPENSSL_LIBRARIES:INTERNAL=ssl;crypto
+_OPENSSL_LIBRARY_DIRS:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/lib
+_OPENSSL_LIBS:INTERNAL=
+_OPENSSL_LIBS_L:INTERNAL=
+_OPENSSL_LIBS_OTHER:INTERNAL=
+_OPENSSL_LIBS_PATHS:INTERNAL=
+_OPENSSL_MODULE_NAME:INTERNAL=openssl
+_OPENSSL_PREFIX:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1
+_OPENSSL_STATIC_CFLAGS:INTERNAL=-I/usr/local/Cellar/openssl@3/3.1.1_1/include
+_OPENSSL_STATIC_CFLAGS_I:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/include
+_OPENSSL_STATIC_LDFLAGS:INTERNAL=-L/usr/local/Cellar/openssl@3/3.1.1_1/lib;-lssl;-lcrypto
+_OPENSSL_STATIC_LDFLAGS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBDIR:INTERNAL=
+_OPENSSL_STATIC_LIBRARIES:INTERNAL=ssl;crypto
+_OPENSSL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/lib
+_OPENSSL_STATIC_LIBS:INTERNAL=
+_OPENSSL_STATIC_LIBS_L:INTERNAL=
+_OPENSSL_STATIC_LIBS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBS_PATHS:INTERNAL=
+_OPENSSL_VERSION:INTERNAL=3.1.1
+_OPENSSL_openssl_INCLUDEDIR:INTERNAL=
+_OPENSSL_openssl_LIBDIR:INTERNAL=
+_OPENSSL_openssl_PREFIX:INTERNAL=
+_OPENSSL_openssl_VERSION:INTERNAL=
 //Have include cereal/cereal.hpp
 _SEQAN3_HAVE_CEREAL:INTERNAL=1
 //ADVANCED property for variable: _SEQAN3_HAVE_EXECINFO
@@ -686,4 +732,11 @@ _SEQAN3_HAVE_SDSL:INTERNAL=1
 _SHARG_HAVE_EXECINFO-ADVANCED:INTERNAL=1
 //Have include execinfo.h
 _SHARG_HAVE_EXECINFO:INTERNAL=1
+__pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
+__pkg_config_checked__OPENSSL:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto
+pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
+pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/local/Cellar/openssl@3/3.1.1_1/lib
 
