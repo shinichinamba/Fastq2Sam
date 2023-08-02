@@ -112,7 +112,7 @@ void phred::finalize() {
         throw std::runtime_error("Cannot finalize the invalid phred format: ["s + this->to_string() + "]"s);
     }
 
-    if (format == std::bitset<4>{0B0011}) {
+    if (format == std::bitset<4>{0B0011} | format == std::bitset<4>{0B0111}) {
         phred phred_(0B0010);
         std::cerr << "The phred format is [" << this->to_string() << "] and is set as [" << phred_.to_string() << "]\n";
         *this = phred_;
