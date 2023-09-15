@@ -124,15 +124,15 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
     if (!hash.empty()) {
         std::ofstream writing_file;
         writing_file.open(hash);
-        writing_file << std::hex << sum << "\t";
-        writing_file << std::dec << n_processed << "\n";
+        writing_file << std::setw(16) << std::setfill('0') << std::hex << sum;
+        writing_file << "\t" << std::dec << n_processed << "\n";
         writing_file.close();
     }
     if (!hash_no_quality.empty()) {
         std::ofstream writing_file;
         writing_file.open(hash_no_quality);
-        writing_file << std::hex << sum_no_quality << "\t";
-        writing_file << std::dec << n_processed << "\n";
+        writing_file << std::setw(16) << std::setfill('0') << std::hex << sum_no_quality;
+        writing_file << "\t" << std::dec << n_processed << "\n";
         writing_file.close();
     }
    std::cerr << "Done. Processed " << n_processed << " record pairs and skipped " << n_skipped << " pairs\n";

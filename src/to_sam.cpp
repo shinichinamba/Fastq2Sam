@@ -1,7 +1,10 @@
+// This file is deprecated
 #include "to_sam.h"
 #include <cstddef> // std::size_t
 #include <stdint.h> // uint64_t
 #include <iostream>
+#include <string> // for 0-padding
+#include <sstream> // for 0-padding
 #include <fstream> // write out hash
 #include <seqan3/io/sequence_file/input.hpp>
 #include <seqan3/utility/views/chunk.hpp>
@@ -86,18 +89,23 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, sam_file_output_type& fou
         outs.resize(i * 2); // to shrink the vector for the final iteration and skipped records
         fout = outs; //write out
     }
+    std::string zero_padding_hex(uint64_t x, int width = 16) {
+        std::ostringstream ss;
+        ss << std::hex << x;
+        std::string ss_str = ss.str();
+        ss_str = std::string(std::max(0, width - (int)S.size()), '0') + ss_str;
+        return ss_str;
+    }
     if (!hash.empty()) {
         std::ofstream writing_file;
         writing_file.open(hash);
-        writing_file << std::hex << sum << "\t";
-        writing_file << std::dec << n_processed << "\n";
+        writing_file << zero_padding_hex(sum) << "\t" << std::dec << n_processed << "\n";
         writing_file.close();
     }
     if (!hash_no_quality.empty()) {
         std::ofstream writing_file;
         writing_file.open(hash_no_quality);
-        writing_file << std::hex << sum_no_quality << "\t";
-        writing_file << std::dec << n_processed << "\n";
+        writing_file << zero_padding_hex(sum_no_quality) << "\t" << std::dec << n_processed << "\n";
         writing_file.close();
     }
    std::cerr << "Done. Processed " << n_processed << " record pairs and skipped " << n_skipped << " pairs\n";
