@@ -142,7 +142,7 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
 
 // program name and version
 const std::string PG{"fastq2sam"s};
-const std::string VER{"0.0.1"s};
+const std::string VER{"0.0.2"s};
 
 // default values of the arguments
 struct cmd_arguments
@@ -167,7 +167,7 @@ struct cmd_arguments
 void initialise_parser(sharg::parser & parser, cmd_arguments & args)
 {
     parser.info.author = "Shinichi Namba";
-    parser.info.short_description = "Converting paired-end illumina fastq files into an unmapped sam/bam file while properly handling the RG tags.";
+    parser.info.short_description = "Converting paired-end illumina/DNBSEQ fastq files into an unmapped sam/bam file while properly handling the RG tags.";
     parser.info.version = VER;
     parser.info.short_copyright = "GPL v3.0";
 

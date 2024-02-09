@@ -12,7 +12,7 @@ fastq_metadata::fastq_metadata() {
 
 // n_ID_fields
 bool fastq_metadata::valid_n_ID_fields() {
-    return (n_ID_fields == 5u) || (n_ID_fields == 7u);
+    return (n_ID_fields == 5u) || (n_ID_fields == 7u) || (n_ID_fields == 0u);
 }
 
 void fastq_metadata::print_n_ID_fields() {
@@ -20,6 +20,8 @@ void fastq_metadata::print_n_ID_fields() {
         seqan3::debug_stream << "The estimated ID format is CASAVA-1.8\n";
     } else if (n_ID_fields == 5u) {
         seqan3::debug_stream << "The estimated ID format is the previous format used before CASAVA-1.8\n";
+    } else if (n_ID_fields == 0u) {
+        seqan3::debug_stream << "The estimated ID format is DNBSEQ\n";
     } else {
         seqan3::debug_stream << "The number of the fields in the fastq ID is " << n_ID_fields << ", not 5 or 7.\n";
     }

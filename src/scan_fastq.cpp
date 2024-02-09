@@ -60,6 +60,10 @@ fastq_metadata scan_fastq(std::filesystem::path & fastq1, std::filesystem::path 
     std::cerr << "Scanning the first fastq\n";
     sequence_file_input_phred94 fin{fastq1};
     fastq_metadata metadata = set_up_metadata(fin, id_index, suffix1);
+    if (metadata.n_ID_fields == 0) {
+        std::cerr << "Assuming Phred-33 as the read names indicate that the sequencer was DNBSEQ\n";
+        metadata.format.update(phred{0B1101});
+    }
     // iterate over the rest of fastq1 to obtain read group IDs (in the {run.lane} format)
     metadata = scan_fastq_iter(metadata, fin, batch_size, suffix1, n_check_phred_after_determined);
     try {

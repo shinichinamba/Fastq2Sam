@@ -1,6 +1,6 @@
 # fastq2sam
 
-fastq2sam - Converting paired-end fastq files with illumina-format quality scores into an unmapped sam/bam file while properly handling the RG tags.
+fastq2sam - Converting paired-end fastq files with illumina/DNBSEQ-format quality scores into an unmapped sam/bam file while properly handling the RG tags.
 
 ## installation
 
@@ -52,3 +52,12 @@ cmake ..
 make
 make test
 ```
+
+### history
+
+#### 2024/2/9 v0.0.2
+* fixed an error which was raised for too short (< 2 characters in default) read names
+* supported the DNBSEQ-format read names
+
+#### 2023/7/26 v0.0.1
+* initial release
