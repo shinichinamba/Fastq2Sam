@@ -1,8 +1,5 @@
 /build/
 /build_mac/
-/sharg-parser/
-/seqan3/
-/src_old/
 /.vscode/
 *.dSYM
 *.DS_Store
