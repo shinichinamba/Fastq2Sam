@@ -28,4 +28,7 @@ struct phred {
 
 // check the phred format of quality score
 phred check_phred(const std::vector<seqan3::dna5>&, const std::vector<seqan3::phred94>&);
+
+// construct a phred object from a string
+phred string_to_phred(const std::string&);
 #endif

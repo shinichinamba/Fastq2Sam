@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/CMakeFiles/sdsl-lite-populate"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/CMakeFiles/sdsl-lite-populate.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/CMakeFiles/sdsl-lite-populate-complete.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-build.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-configure.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-download.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-install.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-patch.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-test.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/sdsl-lite-populate-prefix/src/sdsl-lite-populate-stamp/sdsl-lite-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sdsl-lite-populate"
+		],
+		"name" : "sdsl-lite-populate"
+	}
+}

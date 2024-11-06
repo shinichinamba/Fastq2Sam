@@ -12,5 +12,5 @@ fastq_metadata scan_fastq_iter(fastq_metadata metadata, sequence_file_input_phre
 
 fastq_metadata scan_fastq(std::filesystem::path & fastq1, std::filesystem::path & fastq2, 
                           const std::size_t& batch_size, const int& id_index, const std::string& suffix1, const std::string& suffix2,
-                          std::size_t n_check_phred_after_determined = 10000u);
+                          const phred& prespecified_phred, std::size_t n_check_phred_after_determined = 10000u);
 #endif

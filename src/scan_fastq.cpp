@@ -55,13 +55,16 @@ fastq_metadata scan_fastq_iter(fastq_metadata metadata, sequence_file_input_phre
 
 fastq_metadata scan_fastq(std::filesystem::path & fastq1, std::filesystem::path & fastq2, 
                           const std::size_t& batch_size, const int& id_index, const std::string& suffix1, const std::string& suffix2,
-                          std::size_t n_check_phred_after_determined /*= 10000u*/) {
+                          const phred& prespecified_phred, std::size_t n_check_phred_after_determined /*= 10000u*/) {
     // iterate over fastq1 to obtain read group IDs (in the {run.lane} format)
     std::cerr << "Scanning the first fastq\n";
     sequence_file_input_phred94 fin{fastq1};
     fastq_metadata metadata = set_up_metadata(fin, id_index, suffix1);
-    if (metadata.n_ID_fields == 0) {
-        std::cerr << "Assuming Phred-33 as the read names indicate that the sequencer was DNBSEQ\n";
+    metadata.format = prespecified_phred;
+    if (metadata.format.determined()) {
+        n_check_phred_after_determined = 0; //overwrite
+    } else if (metadata.n_ID_fields == 0) {
+        std::cerr << "Assuming Phred-33 because the read names indicate that the sequencer was DNBSEQ\n";
         metadata.format.update(phred{0B1101});
     }
     // iterate over the rest of fastq1 to obtain read group IDs (in the {run.lane} format)

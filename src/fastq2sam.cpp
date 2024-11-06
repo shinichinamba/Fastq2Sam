@@ -27,7 +27,7 @@ phred test
     std::cout << "Hello World! " << a.to_string() << "\n";
 */
 
-// we cannot separate the declaration of to_sam, because we define the class of the output object in the main program
+// we cannot define to_sam in a separated file, because we need to define the class of the output object in the main program
 #include <seqan3/io/sam_file/output.hpp>
 #include <seqan3/io/sam_file/record.hpp>
 #include "fastq_metadata.h"
@@ -142,7 +142,7 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
 
 // program name and version
 const std::string PG{"fastq2sam"s};
-const std::string VER{"0.0.2"s};
+const std::string VER{"0.0.2.9000"s};
 
 // default values of the arguments
 struct cmd_arguments
@@ -159,6 +159,7 @@ struct cmd_arguments
     int id_index{-1};
     std::string suffix1{"/1"s};
     std::string suffix2{"/2"s};
+    std::string phred{"auto"s};
     std::size_t batch_size{1000000u};
     std::size_t bam_writers{4u};
     bool no_pg{false};
@@ -215,7 +216,7 @@ void initialise_parser(sharg::parser & parser, cmd_arguments & args)
     parser.add_option(args.id_index,
                       sharg::config{.short_id = 'i',
                                     .long_id = "id-index",
-                                    .description = "The column index of ID to be parsed (0-based). With the default, the index will be automatically determined.", 
+                                    .description = "The column index of ID to be parsed (0-based). By default, the index will be automatically estimated.", 
                                     .advanced = true,
                                     .validator = sharg::arithmetic_range_validator{-1, 10}});
     parser.add_option(args.suffix1,
@@ -226,6 +227,11 @@ void initialise_parser(sharg::parser & parser, cmd_arguments & args)
                       sharg::config{.long_id = "suffix2",
                                     .description = "The suffix of the read ID in the second fastq to be removed.", 
                                     .advanced = true});
+    parser.add_option(args.phred,
+                      sharg::config{.long_id = "phred",
+                                    .description = "The phred format. By default, the format will be automatically estimated", 
+                                    .advanced = true,
+                                    .validator = sharg::input_file_validator{{"auto", "phred33", "phred64", "solexa64"}}});
     parser.add_option(args.batch_size,
                       sharg::config{.short_id = 'b',
                                     .long_id = "batch-size",
@@ -257,7 +263,8 @@ void fastq2sam(const cmd_arguments& args, const fastq_metadata metadata) {
             PG + " --fastq1 "s + args.fastq1.string() + " --fastq2 "s + args.fastq2.string() + " --out "s + args.out.string() + 
             " --sample-name "s + args.sample_name + " --library "s + args.library + " --platform "s + args.platform + 
             " --min-length "s + std::to_string(args.min_length) + " --id-index "s + std::to_string(args.id_index) + 
-            " --suffix1 "s + args.suffix1 + " --suffix2 "s + args.suffix2 + " --batch-size "s + std::to_string(args.batch_size); 
+            " --suffix1 "s + args.suffix1 + " --suffix2 "s + args.suffix2 + " --phred "s + args.phred + 
+            " --batch-size "s + std::to_string(args.batch_size); 
         pg.id = PG;
         pg.name = PG;
         pg.version = VER;
@@ -315,7 +322,8 @@ int main(int argc, char ** argv)
     }
 
     // scan
-    fastq_metadata metadata = scan_fastq(args.fastq1, args.fastq2, args.batch_size, args.id_index, args.suffix1, args.suffix2);
+    
+    fastq_metadata metadata = scan_fastq(args.fastq1, args.fastq2, args.batch_size, args.id_index, args.suffix1, args.suffix2, string_to_phred(args.phred));
     metadata.print();
     if (args.out.empty()) {
         return EXIT_SUCCESS; // scan only

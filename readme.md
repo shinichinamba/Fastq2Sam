@@ -4,6 +4,10 @@ fastq2sam - Converting paired-end fastq files with illumina/DNBSEQ-format qualit
 
 ## installation
 
+```
+git clone --recurse-submodules https://github.com/shinichinamba/Fastq2Sam.git
+# git submodule update --init --recursive
+```
 This software depends on the SeqAn3 and Sharg-parser libraries, and the SeqAn3 library requires g++>=11 and the C++20 support.
 
 ### set up in centos
@@ -48,12 +52,15 @@ option (SHARG_NO_BZIP2 "Don't use BZip2, even if present." ON)
 mkdir build && cd $_
 cmake .. 
 # If your default C++ compiler is not g++>=11, please specify the compiler by e.g., -DCMAKE_CXX_COMPILER=$CONDA_PREFIX/bin/g++.
-# (In my Mac OS, I specified /usr/local/bin/g++-13)
+# (In my Mac OS, I specified /usr/local/bin/g++-13 or /opt/homebrew/bin/g++)
 make
 make test
 ```
 
 ### history
+
+#### 2024/11/6 v0.0.3
+* added the "--phred" option
 
 #### 2024/2/9 v0.0.2
 * fixed an error which was raised for too short (< 2 characters in default) read names

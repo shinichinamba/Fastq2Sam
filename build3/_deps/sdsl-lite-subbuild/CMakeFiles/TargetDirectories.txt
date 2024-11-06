@@ -1,0 +1,3 @@
+/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/CMakeFiles/sdsl-lite-populate.dir
+/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/CMakeFiles/edit_cache.dir
+/mnt/c/Users/sinnh/Dropbox/Fastq2Sam/build3/_deps/sdsl-lite-subbuild/CMakeFiles/rebuild_cache.dir

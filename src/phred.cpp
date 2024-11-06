@@ -152,3 +152,17 @@ phred check_phred(const std::vector<seqan3::dna5>& seq_vec, const std::vector<se
     }
     return res;
 }
+
+phred string_to_phred(const std::string& phred_string) {
+    if (phred_string == "auto"s) {
+        return phred{0B1111};
+    } else if (phred_string == "phred33"s) {
+        return phred{0B0100};
+    } else if (phred_string == "phred64"s) {
+        return phred{0B0010};
+    } else if (phred_string == "solexa64"s) {
+        return phred{0B0001};
+    } else {
+        throw std::runtime_error("Cannot determine the phred format: "s + phred_string);
+    }
+}
