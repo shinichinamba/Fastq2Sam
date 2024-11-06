@@ -38,6 +38,7 @@ To do so, edit the following config files:
 1. seqan3/seqan3-config.cmake
 ```
 option (SEQAN3_NO_BZIP2 "Don't use BZip2, even if present." ON)
+option (SEQAN3_NO_CEREAL "Don't use cereal, even if present." ON)
 ```
 
 1. sharg-parser/sharg-config.cmake

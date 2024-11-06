@@ -142,7 +142,7 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
 
 // program name and version
 const std::string PG{"fastq2sam"s};
-const std::string VER{"0.0.2.9000"s};
+const std::string VER{"0.0.3"s};
 
 // default values of the arguments
 struct cmd_arguments
@@ -229,9 +229,9 @@ void initialise_parser(sharg::parser & parser, cmd_arguments & args)
                                     .advanced = true});
     parser.add_option(args.phred,
                       sharg::config{.long_id = "phred",
-                                    .description = "The phred format. By default, the format will be automatically estimated", 
+                                    .description = "The phred format.", 
                                     .advanced = true,
-                                    .validator = sharg::input_file_validator{{"auto", "phred33", "phred64", "solexa64"}}});
+                                    .validator = sharg::value_list_validator{"auto", "phred33", "phred64", "solexa64"}});
     parser.add_option(args.batch_size,
                       sharg::config{.short_id = 'b',
                                     .long_id = "batch-size",

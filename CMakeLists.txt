@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.4)
 project (fastq2sam CXX)
-set (CMAKE_BUILD_TYPE Debug) # Release if on linux, Debug on Mac
+set (CMAKE_BUILD_TYPE Release) # Release if on linux, Debug on Mac
 
 set (BUILD_SHARED_LIBS false)
 set (ZLIB_USE_STATIC_LIBS ON)
@@ -17,8 +17,9 @@ list (APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/sharg-parser") # new
  
 find_package(OpenSSL REQUIRED)
 message(STATUS "Using OpenSSL ${OPENSSL_VERSION}")
-message(STATUS "FOUND ${OPENSSL_CRYPTO_LIBRARY$}")
-message(STATUS "FOUND ${OPENSSL_LIBRARIES$}")
+# message(STATUS "FOUND ${OPENSSL_CRYPTO_LIBRARY$}")
+# message(STATUS "FOUND ${OPENSSL_LIBRARIES$}")
+
 # require seqan3 with a version between >=3.0.0 and <4.0.0
 find_package (seqan3 3.0 REQUIRED)
 find_package (sharg 1.0 REQUIRED)

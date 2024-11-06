@@ -23,7 +23,7 @@ fastq_metadata scan_fastq_iter(fastq_metadata metadata, sequence_file_input_phre
                                std::size_t& n_check_phred_after_determined) {
     std::size_t n_processed = 0u;
     const bool check = true;
-    bool is_phred_determined = false;
+    bool is_phred_determined = metadata.format.determined();
     std::string ID;
     std::size_t len;
     for (auto && records : fin | seqan3::views::chunk(batch_size)) { // `&&` is important because seqan3::views::chunk returns temporaries!
