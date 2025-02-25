@@ -142,7 +142,7 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
 
 // program name and version
 const std::string PG{"fastq2sam"s};
-const std::string VER{"0.0.3"s};
+const std::string VER{"0.0.4"s};
 
 // default values of the arguments
 struct cmd_arguments

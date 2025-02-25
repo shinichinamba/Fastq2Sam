@@ -9,10 +9,11 @@
 
 struct phred {
     std::bitset<4> format; // <phred33 (max 41)><phred33 (max >41)><phred64><solexa64> : 3210
+    std::bitset<4> suggestive; // <phred33 (max 41)><phred33 (max >41)><phred64><solexa64> : 3210
     //constructor
     phred();
-    phred(const int&);
-    phred(const std::bitset<4>&);
+    phred(const int& x, const int y = 15);
+    phred(const std::bitset<4>& x, const std::bitset<4> y = {0B1111});
     //member functions
     std::vector<std::string> to_string_vec() const;
     std::string to_string() const;

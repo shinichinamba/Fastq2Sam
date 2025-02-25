@@ -8,13 +8,17 @@ using namespace seqan3::literals;
 // constructor
 phred::phred() {
     format = std::bitset<4>{0B1111};
+    suggestive = std::bitset<4>{0B1111};
+    // format[0] -> 0B0001
 }
 
-phred::phred(const int& x) {
+phred::phred(const int& x, const int y) {
     format = x;
+    suggestive = y;
 }
-phred::phred(const std::bitset<4>& x) {
+phred::phred(const std::bitset<4>& x, const std::bitset<4> y) {
     format = x;
+    suggestive = y;
 }
 
 std::vector<std::string> phred::to_string_vec() const {
@@ -31,6 +35,11 @@ std::vector<std::string> phred::to_string_vec() const {
     }
     if (format[0]) {
         res.push_back("Solexa64"s);
+    }
+    if (suggestive == std::bitset<4>{0B0001}) {
+      res.push_back("Solexa64 (suggestive, based on the phred score for zero quality)"s);
+    } else if (suggestive == std::bitset<4>{0B0010}) {
+      res.push_back("Phred64 (suggestive, based on the phred score for zero quality)"s);
     }
     return res;
 }
@@ -77,7 +86,7 @@ bool phred::valid() const {
 }
 
 phred phred::operator&(const phred& x) const {
-    phred res(format & x.format);
+    phred res(format & x.format, suggestive & x.suggestive);
     return res;
 }
 
@@ -86,7 +95,8 @@ void phred::operator&=(const phred& x) {
 }
 
 bool phred::operator==(const phred& x) {
-    return format == x.format; 
+    return format == x.format;
+    // ignoring the entry "suggestive" 
 }
 
 
@@ -102,23 +112,26 @@ void phred::update(const phred& x) {
 }
 
 void phred::finalize() {
-    if (this->determined()) {
-        if (format == std::bitset<4>{0B1100}) {
-            format = std::bitset<4>{0B1000}; 
-        }
-        return;
-    }
     if (!this->valid()) {
         throw std::runtime_error("Cannot finalize the invalid phred format: ["s + this->to_string() + "]"s);
     }
 
-    if (format == std::bitset<4>{0B0011} | format == std::bitset<4>{0B0111}) {
-        phred phred_(0B0010);
-        std::cerr << "The phred format is [" << this->to_string() << "] and is set as [" << phred_.to_string() << "]\n";
-        *this = phred_;
+    if (this->determined()) {
+        if (format == std::bitset<4>{0B1100}) {
+            format = std::bitset<4>{0B1000}; 
+        }
+    } else if (format == std::bitset<4>{0B0011} || format == std::bitset<4>{0B0111}) {
+        if (suggestive == std::bitset<4>{0B0001} || suggestive == std::bitset<4>{0B0010}) {
+            format = suggestive;
+        } else {
+            phred phred_(0B0010);
+            std::cerr << "The phred format is [" << this->to_string() << "] and is set as [" << phred_.to_string() << "]\n";
+            *this = phred_;
+        }
     } else {
         throw std::runtime_error("Cannot finalize the phred format: ["s + this->to_string() + "]"s);
     }
+    suggestive = std::bitset<4>{0B0000}; // clear
 }
 // end of struct phred
 
@@ -131,21 +144,23 @@ std::vector<seqan3::phred94> solexa_suggestive_chars = {'<'_phred94, '='_phred94
 
 // check the phred format of quality score
 phred check_phred(const std::vector<seqan3::dna5>& seq_vec, const std::vector<seqan3::phred94>& qual_vec) {
-    phred res(0B1111);
+    phred res;
     int qp;
     for (std::size_t i = 0; i < seq_vec.size(); i++) {
+        //suggestive evidence
         if (seq_vec[i] == 'N'_dna5) {
             if (std::find(phred64_0_chars.begin(), phred64_0_chars.end(), qual_vec[i]) != phred64_0_chars.end()) {
-                return phred{0B0010}; // determined
+                res &= phred{0B1111, 0B0010};
             } else if (qual_vec[i] == solexa_0_char) {
-                return phred{0B0001}; // determined
+                res &= phred{0B1111, 0B0001};
             }
         }
+        // deterministic
         qp = qual_vec[i].to_phred();
         if (qp <= phred33_specific_chars_max) {
-            return phred{0B1100}; // determined
+            res &= phred{0B1100}; // determined
         } else if (qp >= phred64_suggestive_chars_min) {
-            res &= phred{0B0111}; // Phred+64 or Solexa+64. we cannot differentiate Phred+64 from Solexa+64
+            res &= phred{0B0111}; // Phred+64 or Solexa+64. we cannot differentiate Phred+64 from Solexa+64 if not using the suggestive evidence
         } else if (std::find(solexa_suggestive_chars.begin(), solexa_suggestive_chars.end(), qual_vec[i]) != solexa_suggestive_chars.end()) {
             res &= phred{0B1101}; // Phred+33 or Solexa+64
         }
@@ -154,13 +169,13 @@ phred check_phred(const std::vector<seqan3::dna5>& seq_vec, const std::vector<se
 }
 
 phred string_to_phred(const std::string& phred_string) {
-    if (phred_string == "auto"s) {
+    if (phred_string == "auto"s || phred_string == "Auto"s) {
         return phred{0B1111};
-    } else if (phred_string == "phred33"s) {
+    } else if (phred_string == "phred33"s || phred_string == "Phred33"s) {
         return phred{0B0100};
-    } else if (phred_string == "phred64"s) {
+    } else if (phred_string == "phred64"s || phred_string == "Phred64"s) {
         return phred{0B0010};
-    } else if (phred_string == "solexa64"s) {
+    } else if (phred_string == "solexa64"s || phred_string == "Solexa64"s) {
         return phred{0B0001};
     } else {
         throw std::runtime_error("Cannot determine the phred format: "s + phred_string);

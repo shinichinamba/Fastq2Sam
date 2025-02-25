@@ -60,6 +60,9 @@ make test
 
 ### history
 
+#### 2025/2/25 v0.0.4
+* supported the files using irregular characters for zero quality
+
 #### 2024/11/6 v0.0.3
 * added the "--phred" option
 
