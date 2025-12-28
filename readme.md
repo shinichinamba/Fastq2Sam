@@ -6,13 +6,19 @@ split_fastq - Splitting paired-end illumina/DNBSEQ fastq files by read groups.
 
 ## installation
 
+### static binary
+
+Linux users can download static binary files from the release page.
+
+### from source
+
 ```
 git clone --recurse-submodules https://github.com/shinichinamba/Fastq2Sam.git
 # git submodule update --init --recursive
 ```
 This software depends on the SeqAn3 and Sharg-parser libraries, and the SeqAn3 library requires g++>=11 and the C++20 support.
 
-### build
+#### build
 
 ```
 mkdir build && cd $_
@@ -23,19 +29,7 @@ make
 make test
 ```
 
-### set up in centos/WSL2
-
-To use cmake in WSL2, see https://stackoverflow.com/questions/62879479/every-call-to-configure-file-fails-on-wsl-configure-file-problem-configuring-fi
-
-Then, in my local env, I ran the following commands:
-```
-conda create --name gxx13 python=3.7 
-conda activate gxx13
-conda install -c conda-forge -c anaconda gxx_linux-64 gcc_linux-64 sysroot_linux-64 bzip2 zlib
-# export CMAKE_PREFIX_PATH="/usr/lib64/:$CMAKE_PREFIX_PATH" # I wrote this in ~/.bashrc, but it might be unnecessary
-```
-
-### Release or Debug mode
+#### Release or Debug mode
 
 If you prefer static build, edit the line 4 of the CMakeLists.txt so that
 ```
@@ -57,6 +51,18 @@ option (SEQAN3_NO_CEREAL "Don't use cereal, even if present." ON)
 1. sharg-parser/sharg-config.cmake
 ```
 option (SHARG_NO_BZIP2 "Don't use BZip2, even if present." ON)
+```
+
+#### set up in centos/WSL2
+
+To use cmake in WSL2, see https://stackoverflow.com/questions/62879479/every-call-to-configure-file-fails-on-wsl-configure-file-problem-configuring-fi
+
+Then, in my local environment for example, I ran the following commands:
+```
+conda create --name gxx13 python=3.7 
+conda activate gxx13
+conda install -c conda-forge -c anaconda gxx_linux-64 gcc_linux-64 sysroot_linux-64 bzip2 zlib
+# export CMAKE_PREFIX_PATH="/usr/lib64/:$CMAKE_PREFIX_PATH" # I wrote this in ~/.bashrc, but it might be unnecessary
 ```
 
 ## history
