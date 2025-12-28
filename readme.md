@@ -1,6 +1,8 @@
-# fastq2sam
+# fastq2sam / split_fastq
 
 fastq2sam - Converting paired-end fastq files with illumina/DNBSEQ-format quality scores into an unmapped sam/bam file while properly handling the RG tags.
+
+split_fastq - Splitting paired-end illumina/DNBSEQ fastq files by read groups.
 
 ## installation
 
@@ -10,9 +12,20 @@ git clone --recurse-submodules https://github.com/shinichinamba/Fastq2Sam.git
 ```
 This software depends on the SeqAn3 and Sharg-parser libraries, and the SeqAn3 library requires g++>=11 and the C++20 support.
 
-### set up in centos
+### build
 
-To use cmake in WSL, see https://stackoverflow.com/questions/62879479/every-call-to-configure-file-fails-on-wsl-configure-file-problem-configuring-fi
+```
+mkdir build && cd $_
+cmake .. 
+# If your default C++ compiler is not g++>=11, please specify the compiler by e.g., -DCMAKE_CXX_COMPILER=$CONDA_PREFIX/bin/g++.
+# (In my Mac OS, I specified /usr/local/bin/g++-13 or /opt/homebrew/bin/g++)
+make
+make test
+```
+
+### set up in centos/WSL2
+
+To use cmake in WSL2, see https://stackoverflow.com/questions/62879479/every-call-to-configure-file-fails-on-wsl-configure-file-problem-configuring-fi
 
 Then, in my local env, I ran the following commands:
 ```
@@ -46,29 +59,20 @@ option (SEQAN3_NO_CEREAL "Don't use cereal, even if present." ON)
 option (SHARG_NO_BZIP2 "Don't use BZip2, even if present." ON)
 ```
 
+## history
 
-### build
+### 2025/12/28 v0.1.0
+* added the executable "split_fastq"
 
-```
-mkdir build && cd $_
-cmake .. 
-# If your default C++ compiler is not g++>=11, please specify the compiler by e.g., -DCMAKE_CXX_COMPILER=$CONDA_PREFIX/bin/g++.
-# (In my Mac OS, I specified /usr/local/bin/g++-13 or /opt/homebrew/bin/g++)
-make
-make test
-```
-
-### history
-
-#### 2025/2/25 v0.0.4
+### 2025/2/25 v0.0.4
 * supported the files using irregular characters for zero quality
 
-#### 2024/11/6 v0.0.3
-* added the "--phred" option
+### 2024/11/6 v0.0.3
+* added the option "--phred"
 
-#### 2024/2/9 v0.0.2
+### 2024/2/9 v0.0.2
 * fixed an error which was raised for too short (< 2 characters in default) read names
 * supported the DNBSEQ-format read names
 
-#### 2023/7/26 v0.0.1
+### 2023/7/26 v0.0.1
 * initial release

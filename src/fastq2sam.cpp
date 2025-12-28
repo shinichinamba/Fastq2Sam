@@ -42,6 +42,7 @@ phred test
 #include "convert_phred_score.h"
 #include "id_parser.h"
 #include "bamhash.h"
+#include "version.h"
 
 // sam_flag
 auto first_flag = seqan3::sam_flag::paired | seqan3::sam_flag::unmapped | seqan3::sam_flag::mate_unmapped | seqan3::sam_flag::first_in_pair;
@@ -142,7 +143,6 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
 
 // program name and version
 const std::string PG{"fastq2sam"s};
-const std::string VER{"0.0.4"s};
 
 // default values of the arguments
 struct cmd_arguments
@@ -169,7 +169,7 @@ void initialise_parser(sharg::parser & parser, cmd_arguments & args)
 {
     parser.info.author = "Shinichi Namba";
     parser.info.short_description = "Converting paired-end illumina/DNBSEQ fastq files into an unmapped sam/bam file while properly handling the RG tags.";
-    parser.info.version = VER;
+    parser.info.version = FASTQ2SAM_VERSION_STRING;
     parser.info.short_copyright = "GPL v3.0";
 
     parser.add_option(args.fastq1,
@@ -267,7 +267,7 @@ void fastq2sam(const cmd_arguments& args, const fastq_metadata metadata) {
             " --batch-size "s + std::to_string(args.batch_size); 
         pg.id = PG;
         pg.name = PG;
-        pg.version = VER;
+        pg.version = FASTQ2SAM_VERSION_STRING;
         fout.header().program_infos.push_back(pg);
     }
     
@@ -322,8 +322,8 @@ int main(int argc, char ** argv)
     }
 
     // scan
-    
-    fastq_metadata metadata = scan_fastq(args.fastq1, args.fastq2, args.batch_size, args.id_index, args.suffix1, args.suffix2, string_to_phred(args.phred));
+    const bool allow_early_termination{false};
+    fastq_metadata metadata = scan_fastq(args.fastq1, args.fastq2, args.id_index, args.suffix1, args.suffix2, string_to_phred(args.phred), allow_early_termination);
     metadata.print();
     if (args.out.empty()) {
         return EXIT_SUCCESS; // scan only

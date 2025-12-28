@@ -38,6 +38,17 @@ add_executable (fastq2sam
     src/fastq2sam.cpp 
 )
 
+add_executable (split_fastq 
+    src/bamhash.cpp
+    src/convert_phred_score.cpp
+    src/fastq_metadata.cpp
+    src/id_parser.cpp
+    src/phred.cpp
+    src/scan_fastq.cpp
+    src/split.cpp
+    src/split_fastq.cpp 
+)
+
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "Release")
     target_link_libraries (fastq2sam PUBLIC seqan3::seqan3 sharg::sharg ${OPENSSL_CRYPTO_LIBRARIES} -static -static-libstdc++)
     target_compile_options(fastq2sam PUBLIC -O3 -Wall -Wextra)
@@ -47,6 +58,16 @@ else()
 endif()
 target_include_directories(fastq2sam PUBLIC ${OPENSSL_INCLUDE_DIR})
 target_compile_features(fastq2sam PUBLIC cxx_std_20)
+
+if ("${CMAKE_BUILD_TYPE}" STREQUAL "Release")
+    target_link_libraries (split_fastq PUBLIC seqan3::seqan3 sharg::sharg ${OPENSSL_CRYPTO_LIBRARIES} -static -static-libstdc++)
+    target_compile_options(split_fastq PUBLIC -O3 -Wall -Wextra)
+else()
+    target_link_libraries (split_fastq PUBLIC seqan3::seqan3 sharg::sharg ${OPENSSL_CRYPTO_LIBRARIES})
+    target_compile_options(split_fastq PUBLIC -g -Wall -Wextra)
+endif()
+target_include_directories(split_fastq PUBLIC ${OPENSSL_INCLUDE_DIR})
+target_compile_features(split_fastq PUBLIC cxx_std_20)
 
 # ctest
 enable_testing()
