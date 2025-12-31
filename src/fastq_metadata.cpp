@@ -6,6 +6,7 @@ fastq_metadata::fastq_metadata() {
     format = phred();
     id_index = 9999u; // implausibly large value
     n_ID_fields = 9999u; // implausibly large value
+    illumina_second_id_style = false;
     rg_ids = std::vector<std::string>{};
     lengths = std::vector<std::size_t>{};
 }
@@ -37,7 +38,17 @@ bool fastq_metadata::enough_info() {
 
 // for n_ID_fields, use print_n_ID_fields()
 void fastq_metadata::print() {
+    std::string illumina_second_id_style_str;
+    if (illumina_second_id_style)
+    {
+        illumina_second_id_style_str = "Assuming the Illumina ID format for obtaining read group IDs";
+    }
+    else
+    {
+        illumina_second_id_style_str = "";
+    }
     seqan3::debug_stream
+        << illumina_second_id_style_str << '\n'
         << "The format of quality score: " << format.to_string() << '\n'
         << "Read group IDs (N=" << rg_ids.size() << ") : " << rg_ids << '\n'
         << "Read lengths (N=" << lengths.size() << ") : " << lengths << '\n';

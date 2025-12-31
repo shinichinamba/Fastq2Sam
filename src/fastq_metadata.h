@@ -6,6 +6,7 @@ struct fastq_metadata {
     phred format; 
     std::size_t id_index;
     std::size_t n_ID_fields;
+    bool illumina_second_id_style;
     std::vector<std::string> rg_ids;
     std::vector<std::size_t> lengths;
     //constructor

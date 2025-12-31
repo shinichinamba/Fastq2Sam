@@ -67,6 +67,9 @@ conda install -c conda-forge -c anaconda gxx_linux-64 gcc_linux-64 sysroot_linux
 
 ## history
 
+### 2025/12/28 v0.1.1
+* improved read group parsing
+
 ### 2025/12/28 v0.1.0
 * added the executable "split_fastq"
 

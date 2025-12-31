@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <utility>
+#include <array>
 #include <sharg/all.hpp> // argparser for seqan3.3
 #include <seqan3/contrib/stream/bgzf.hpp> // seqan3::contrib::bgzf_thread_count
 
@@ -63,8 +64,7 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
     }
     const bool check = false;
     bool error_flag;
-    std::string ID1;
-    std::string ID2;
+    std::array<std::string, 2> ID1, ID2;
     std::string rg_id;
     seqan3::sam_tag_dictionary dict;
     std::vector<sam_record_type> outs(batch_size * 2, sam_record_type{});
@@ -79,9 +79,9 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
         for (auto && [rec1, rec2] : seqan3::views::zip(record1, record2)) {
             ++n_processed;
             // parse id
-            ID1 = parse_ID(rec1.id(), metadata.id_index, suffix1);
-            ID2 = parse_ID(rec2.id(), metadata.id_index, suffix2);
-            if (ID1 != ID2) {
+            ID1 = parse_ID(rec1.id(), metadata.id_index, suffix1, metadata.illumina_second_id_style);
+            ID2 = parse_ID(rec2.id(), metadata.id_index, suffix2, metadata.illumina_second_id_style);
+            if (ID1[0] != ID2[0] || ID1[1] != ID2[1]) {
                 throw std::runtime_error("Your pairs don't match. ID in the file 1, " + rec1.id() + "; ID in the file 2, " + rec2.id());
             }
             
@@ -104,17 +104,17 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
                 // store records
                 auto bq1 = convert_phred_score(rec1.base_qualities(), metadata.format);
                 auto bq2 = convert_phred_score(rec2.base_qualities(), metadata.format);
-                outs.at(i * 2) = sam_record_type{ID1, rec1.sequence(), bq1, first_flag, dict};
-                outs.at(i * 2 + 1) = sam_record_type{ID2, rec2.sequence(), bq2, second_flag, dict};
+                outs.at(i * 2) = sam_record_type{ID1[0], rec1.sequence(), bq1, first_flag, dict};
+                outs.at(i * 2 + 1) = sam_record_type{ID2[0], rec2.sequence(), bq2, second_flag, dict};
 
                 // hash
                 if (!hash.empty()) {
-                    hexSum(calc_hash_str(ID1 + "/1" + vec2string(rec1.sequence()) + vec2string(bq1)), sum);
-                    hexSum(calc_hash_str(ID2 + "/2" + vec2string(rec2.sequence()) + vec2string(bq2)), sum);
+                    hexSum(calc_hash_str(ID1[0] + "/1" + vec2string(rec1.sequence()) + vec2string(bq1)), sum);
+                    hexSum(calc_hash_str(ID2[0] + "/2" + vec2string(rec2.sequence()) + vec2string(bq2)), sum);
                 }
                 if (!hash_no_quality.empty()) {
-                    hexSum(calc_hash_str((ID1 + "/1" + vec2string(rec1.sequence()))), sum_no_quality);
-                    hexSum(calc_hash_str((ID2 + "/2" + vec2string(rec2.sequence()))), sum_no_quality);
+                    hexSum(calc_hash_str((ID1[0] + "/1" + vec2string(rec1.sequence()))), sum_no_quality);
+                    hexSum(calc_hash_str((ID2[0] + "/2" + vec2string(rec2.sequence()))), sum_no_quality);
                 }
                 ++i;
             }

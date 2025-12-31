@@ -1,6 +1,7 @@
 #include "scan_fastq.h"
 #include "id_parser.h"
 #include <iostream>
+#include <array>
 #include <seqan3/utility/views/chunk.hpp>
 
 fastq_metadata set_up_metadata(sequence_file_input_phred94& fin, const int& id_index, const std::string& suffix) {
@@ -12,6 +13,7 @@ fastq_metadata set_up_metadata(sequence_file_input_phred94& fin, const int& id_i
         metadata.id_index = id_index;
     }
     metadata.n_ID_fields = get_n_ID_fields(rec.id(), metadata.id_index, suffix);
+    metadata.illumina_second_id_style = is_valid_second_id_field_illumina(rec.id(), metadata.id_index);
     metadata.print_n_ID_fields();
     if (!metadata.valid_n_ID_fields()) {
         std::cerr << "The read group ID will be always 'A'\n";
@@ -28,7 +30,7 @@ fastq_metadata scan_fastq_iter(fastq_metadata metadata, sequence_file_input_phre
     std::size_t len;
     for (auto && rec : fin) {
         ++n_processed;
-        ID = get_rg_id(parse_ID(rec.id(), metadata.id_index, suffix), metadata.n_ID_fields, check);
+        ID = get_rg_id(parse_ID(rec.id(), metadata.id_index, suffix, metadata.illumina_second_id_style), metadata.n_ID_fields, check);
         if (std::find(metadata.rg_ids.begin(), metadata.rg_ids.end(), ID) == metadata.rg_ids.end()) {
             metadata.rg_ids.push_back(ID); // add the record if it was not already added
         }
