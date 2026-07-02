@@ -10,7 +10,9 @@ using namespace std::literals;
 std::regex DNBSEQ_regex(R"(^(\w+)L(\d+)C\d{3}R\d+$)");
 
 // get read group ID from fastq ID
-std::string get_rg_id(const std::array<std::string, 2>& id, const std::size_t& n_fields, const bool& check /*=false"*/) {
+std::string get_rg_id(const std::array<std::string, 2>& id, const std::size_t& n_fields, const bool& check /*=false*/,
+    const bool& use_index_sequence /*=false*/
+) {
     std::vector<std::string> split_id = split(id[0], ':');
     std::string rg_id;
     if (check == true && n_fields != 0 && n_fields != split_id.size())
@@ -19,7 +21,7 @@ std::string get_rg_id(const std::array<std::string, 2>& id, const std::size_t& n
     }
     if (n_fields == 7)
     {
-        if (id[1] != "")
+        if (use_index_sequence == true && id[1] != "")
         {
             std::vector<std::string> second_split_id = split(id[1], ':');
             rg_id = split_id[2] + "." + split_id[3] + "." + second_split_id[3];
@@ -50,6 +52,23 @@ std::string get_rg_id(const std::array<std::string, 2>& id, const std::size_t& n
         rg_id = "A"s;
     }
     return rg_id;
+}
+
+// number of mismatched bases between two index sequences.
+// If the two sequences differ in length, they cannot be merged, so a large value
+// (the length of the longer one) is returned. Positions are compared one by one,
+// so a '+' in dual-index sequences contributes 0 when it aligns.
+std::size_t index_hamming_distance(const std::string& a, const std::string& b) {
+    if (a.size() != b.size()) {
+        return std::max(a.size(), b.size());
+    }
+    std::size_t distance = 0u;
+    for (std::size_t i = 0u; i < a.size(); ++i) {
+        if (a[i] != b[i]) {
+            ++distance;
+        }
+    }
+    return distance;
 }
 
 // remove a suffix

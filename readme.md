@@ -1,5 +1,7 @@
 # fastq2sam / split_fastq
 
+![build](https://github.com/shinichinamba/Fastq2Sam/actions/workflows/build.yml/badge.svg)
+
 fastq2sam - Converting paired-end fastq files with illumina/DNBSEQ-format quality scores into an unmapped sam/bam file while properly handling the RG tags.
 
 split_fastq - Splitting paired-end illumina/DNBSEQ fastq files by read groups.
@@ -9,6 +11,12 @@ split_fastq - Splitting paired-end illumina/DNBSEQ fastq files by read groups.
 ### static binary
 
 Linux users can download static binary files from the release page.
+The binaries are built automatically by GitHub Actions (see `.github/workflows/build.yml`) whenever a `v*` tag is pushed, and are provided for two architectures:
+
+* `fastq2sam-linux-x86_64.tar.gz` (x86_64 / amd64)
+* `fastq2sam-linux-aarch64.tar.gz` (ARM64 / aarch64)
+
+Each archive contains the `fastq2sam` and `split_fastq` executables.
 
 ### from source
 
@@ -66,6 +74,13 @@ conda install -c conda-forge -c anaconda gxx_linux-64 gcc_linux-64 sysroot_linux
 ```
 
 ## history
+
+### 2026/7/2 v0.1.3
+* added the option "--max-index-mismatch" (default 1), which merges read groups whose index sequences differ within the allowed number of base mismatches (effective only with "--use-index-sequence-for-read-group")
+* added a GitHub Actions workflow that builds and tests static binaries for x86_64 and aarch64, and attaches them to the release on "v*" tags
+
+### 2026/2/3 v0.1.2
+* added the option "--use-index-sequence-for-read-group"
 
 ### 2025/12/28 v0.1.1
 * improved read group parsing

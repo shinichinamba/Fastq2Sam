@@ -10,7 +10,10 @@ fastq_metadata scan_fastq_iter(fastq_metadata metadata, sequence_file_input_phre
         const bool& allow_early_termination, std::size_t& n_check_phred_after_determined);
 */
 
-fastq_metadata scan_fastq(std::filesystem::path & fastq1, std::filesystem::path & fastq2, 
+fastq_metadata scan_fastq(std::filesystem::path & fastq1, std::filesystem::path & fastq2,
                           const int& id_index, const std::string& suffix1, const std::string& suffix2,
-                          const phred& prespecified_phred, const bool& allow_early_termination, std::size_t n_check_phred_after_determined = 100000u);
+                          const phred& prespecified_phred, const bool& allow_early_termination, const bool& use_index_sequence,
+                          const std::size_t& max_index_mismatch,
+                          std::size_t n_check_phred_after_determined = 100000u);
+void collapse_read_groups(fastq_metadata& metadata, const std::size_t& max_index_mismatch);
 #endif

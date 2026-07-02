@@ -3,7 +3,8 @@
 #include <vector>
 #include <string>
 #include <cstddef> // std::size_t
-std::string get_rg_id(const std::array<std::string, 2>& id, const std::size_t& n_fields, const bool& check = false);
+std::string get_rg_id(const std::array<std::string, 2>& id, const std::size_t& n_fields, const bool& check = false, const bool& use_index_sequence = false);
+std::size_t index_hamming_distance(const std::string& a, const std::string& b);
 std::string remove_suffix(std::string& query, const std::string& suffix);
 std::vector<std::string> split_by_spaces(std::string x);
 std::array<std::string, 2> parse_ID(const std::string& ID, const std::size_t& id_index, const std::string& suffix, const bool& also_return_second_id = false);

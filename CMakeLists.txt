@@ -86,3 +86,30 @@ add_test(
     COMMAND rm -f test.sam
     WORKING_DIRECTORY "${PROJECT_BINARY_DIR}"
 )
+
+# --- read group merging by index sequence (--use-index-sequence-for-read-group + --max-index-mismatch) ---
+add_test(
+    NAME test_run_index_mismatch
+    COMMAND $<TARGET_FILE:fastq2sam> -1 "${CMAKE_CURRENT_SOURCE_DIR}/test/index_mismatch.1.fq" -2 "${CMAKE_CURRENT_SOURCE_DIR}/test/index_mismatch.2.fq" -o test.index_mismatch.sam -n sample1 -s --no-pg
+    WORKING_DIRECTORY "${PROJECT_BINARY_DIR}"
+)
+add_test(
+    NAME diff_after_test_run_index_mismatch
+    COMMAND diff -q test.index_mismatch.sam "${CMAKE_CURRENT_SOURCE_DIR}/test/out.noPG.index_mismatch.sam"
+    WORKING_DIRECTORY "${PROJECT_BINARY_DIR}"
+)
+add_test(
+    NAME split_run_index_mismatch
+    COMMAND $<TARGET_FILE:split_fastq> -1 "${CMAKE_CURRENT_SOURCE_DIR}/test/index_mismatch.1.fq" -2 "${CMAKE_CURRENT_SOURCE_DIR}/test/index_mismatch.2.fq" -o test.index_mismatch.split -s
+    WORKING_DIRECTORY "${PROJECT_BINARY_DIR}"
+)
+add_test(
+    NAME diff_after_split_run_index_mismatch
+    COMMAND diff -q test.index_mismatch.split/file_list.txt "${CMAKE_CURRENT_SOURCE_DIR}/test/index_mismatch.file_list.txt"
+    WORKING_DIRECTORY "${PROJECT_BINARY_DIR}"
+)
+add_test(
+    NAME clean_index_mismatch
+    COMMAND ${CMAKE_COMMAND} -E rm -rf test.index_mismatch.sam test.index_mismatch.split
+    WORKING_DIRECTORY "${PROJECT_BINARY_DIR}"
+)

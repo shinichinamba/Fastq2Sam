@@ -4,6 +4,3 @@
 [submodule "sharg-parser"]
 	path = sharg-parser
 	url = https://github.com/seqan/sharg-parser
-[submodule "--force"]
-        path = sharg-parser
-        url = https://github.com/seqan/sharg-parser

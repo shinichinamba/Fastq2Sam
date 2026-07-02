@@ -58,7 +58,8 @@ using sam_record_type = seqan3::sam_record<types, fields>;
 template <class T>
 void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::vector<seqan3::sam_tag_dictionary>& dicts,
             std::filesystem::path hash, std::filesystem::path hash_no_quality, 
-            const std::size_t& batch_size, const std::size_t& min_length, const std::string& suffix1, const std::string& suffix2) {
+            const std::size_t& batch_size, const std::size_t& min_length, const std::string& suffix1, const std::string& suffix2,
+            const bool use_index_sequence) {
     if (!metadata.enough_info()) {
         throw std::runtime_error("The metadata does not contain enough information.");
     }
@@ -81,11 +82,17 @@ void to_sam(fastq_metadata metadata, T& fin1, T& fin2, auto& fout, const std::ve
             // parse id
             ID1 = parse_ID(rec1.id(), metadata.id_index, suffix1, metadata.illumina_second_id_style);
             ID2 = parse_ID(rec2.id(), metadata.id_index, suffix2, metadata.illumina_second_id_style);
-            if (ID1[0] != ID2[0] || ID1[1] != ID2[1]) {
+            if (ID1[0] != ID2[0]) {
                 throw std::runtime_error("Your pairs don't match. ID in the file 1, " + rec1.id() + "; ID in the file 2, " + rec2.id());
             }
             
-            rg_id = get_rg_id(ID1, metadata.n_ID_fields, check);
+            rg_id = get_rg_id(ID1, metadata.n_ID_fields, check, use_index_sequence);
+            if (!metadata.rg_id_map.empty()) {
+                auto map_it = metadata.rg_id_map.find(rg_id);
+                if (map_it != metadata.rg_id_map.end()) {
+                    rg_id = map_it->second; // remap to the canonical read group
+                }
+            }
             error_flag = true;
             for (auto d : dicts) {
                 if (rg_id == d.get<"RG"_tag>()) {
@@ -162,7 +169,10 @@ struct cmd_arguments
     std::string phred{"auto"s};
     std::size_t batch_size{1000000u};
     std::size_t bam_writers{4u};
+    std::size_t bgzf_threads{4u};
     bool no_pg{false};
+    bool use_index_sequence_for_read_group{false};
+    std::size_t max_index_mismatch{1u};
 };
 
 void initialise_parser(sharg::parser & parser, cmd_arguments & args)
@@ -240,13 +250,30 @@ void initialise_parser(sharg::parser & parser, cmd_arguments & args)
                                     .validator = sharg::arithmetic_range_validator{1, 100000000}});
     parser.add_option(args.bam_writers,
                       sharg::config{.long_id = "bam-writers",
-                                    .description = "The number of threads used to write a bam file.", 
+                                    .description = "[Deprecated] The number of threads used to write a bam file. Use --bgzf-threads instead.", 
                                     .advanced = true,
                                     .validator = sharg::arithmetic_range_validator{1, 100}});
+    parser.add_option(args.bgzf_threads,
+                      sharg::config{.long_id = "bgzf-threads",
+                                    .description = "The number of threads used to write a bam file.", 
+                                    .advanced = true,
+                                    .validator = sharg::arithmetic_range_validator{1, 100}});                         
     parser.add_flag(args.no_pg,
                       sharg::config{.long_id = "no-pg",
                                     .description = "Do not write the PG tag (for testing purpose).", 
                                     .advanced = true});                                    
+    parser.add_flag(args.use_index_sequence_for_read_group,
+                      sharg::config{.short_id = 's',
+                                    .long_id = "use-index-sequence-for-read-group",
+                                    .description = "Whether to use Illumina index sequence to infer read groups.",
+                                    .advanced = true});
+    parser.add_option(args.max_index_mismatch,
+                      sharg::config{.long_id = "max-index-mismatch",
+                                    .description = "The maximum number of base mismatches allowed in the index "
+                                                   "sequence when merging read groups. Only effective with "
+                                                   "--use-index-sequence-for-read-group.",
+                                    .advanced = true,
+                                    .validator = sharg::arithmetic_range_validator{0, 10}});
 }
 
 // fastq2sam
@@ -259,12 +286,15 @@ void fastq2sam(const cmd_arguments& args, const fastq_metadata metadata) {
     // header: program_infos
     if (args.no_pg == false) {
         seqan3::sam_file_program_info_t pg{};
+        std::string use_index_sequence_for_read_group_str = args.use_index_sequence_for_read_group ? "true" : "false";
         pg.command_line_call = 
             PG + " --fastq1 "s + args.fastq1.string() + " --fastq2 "s + args.fastq2.string() + " --out "s + args.out.string() + 
             " --sample-name "s + args.sample_name + " --library "s + args.library + " --platform "s + args.platform + 
             " --min-length "s + std::to_string(args.min_length) + " --id-index "s + std::to_string(args.id_index) + 
             " --suffix1 "s + args.suffix1 + " --suffix2 "s + args.suffix2 + " --phred "s + args.phred + 
-            " --batch-size "s + std::to_string(args.batch_size); 
+            " --batch-size "s + std::to_string(args.batch_size) +
+            " --use-index-sequence-for-read-group"s + use_index_sequence_for_read_group_str +
+            " --max-index-mismatch "s + std::to_string(args.max_index_mismatch);
         pg.id = PG;
         pg.name = PG;
         pg.version = FASTQ2SAM_VERSION_STRING;
@@ -294,11 +324,11 @@ void fastq2sam(const cmd_arguments& args, const fastq_metadata metadata) {
     if (metadata.format == phred{0B0100} || metadata.format == phred{0B1000}) {
         sequence_file_input_phred94 fin1{args.fastq1};
         sequence_file_input_phred94 fin2{args.fastq2};
-        to_sam(metadata, fin1, fin2, fout, dicts, args.hash, args.hash_no_quality, args.batch_size, args.min_length, args.suffix1, args.suffix2);
+        to_sam(metadata, fin1, fin2, fout, dicts, args.hash, args.hash_no_quality, args.batch_size, args.min_length, args.suffix1, args.suffix2, args.use_index_sequence_for_read_group);
     } else {
         sequence_file_input_phred68solexa fin1{args.fastq1};
         sequence_file_input_phred68solexa fin2{args.fastq2};
-        to_sam(metadata, fin1, fin2, fout, dicts, args.hash, args.hash_no_quality, args.batch_size, args.min_length, args.suffix1, args.suffix2);
+        to_sam(metadata, fin1, fin2, fout, dicts, args.hash, args.hash_no_quality, args.batch_size, args.min_length, args.suffix1, args.suffix2, args.use_index_sequence_for_read_group);
     }
 }
 
@@ -320,17 +350,21 @@ int main(int argc, char ** argv)
     if (args.library.empty()) {
         args.library = args.sample_name;
     }
+    if (args.bam_writers != 4 && args.bgzf_threads == 4) {
+        args.bgzf_threads = args.bam_writers; // 4: the default value
+    }
 
     // scan
     const bool allow_early_termination{false};
-    fastq_metadata metadata = scan_fastq(args.fastq1, args.fastq2, args.id_index, args.suffix1, args.suffix2, string_to_phred(args.phred), allow_early_termination);
+    fastq_metadata metadata = scan_fastq(args.fastq1, args.fastq2, args.id_index, args.suffix1, args.suffix2,
+        string_to_phred(args.phred), allow_early_termination, args.use_index_sequence_for_read_group, args.max_index_mismatch);
     metadata.print();
     if (args.out.empty()) {
         return EXIT_SUCCESS; // scan only
     }
 
     // fastq2sam
-    seqan3::contrib::bgzf_thread_count = args.bam_writers;
+    seqan3::contrib::bgzf_thread_count = args.bgzf_threads;
     fastq2sam(args, metadata);
 
     return EXIT_SUCCESS;
